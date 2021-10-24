@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "tag": "forge:ores/black_opal",
+    "tag": "forge:ores/black_opal_ore"
+  },
+  "result": {
+    "fluid": "bettercompat:molten_blackopal",
+    "amount": 144
+  },
+  "temperature": 1000,
+  "time": 100,
+  "conditions": [
+      {
+          "type": "forge:mod_loaded",
+          "modid": "tconstruct"
+      }
+  ]
+}

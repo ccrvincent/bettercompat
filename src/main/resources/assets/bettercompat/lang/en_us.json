@@ -1,0 +1,82 @@
+{
+  "fluid.bettercompat.molten_aeternium": "Molten Aeternium",
+  "fluid.bettercompat.molten_terminite": "Molten Terminite",
+  "fluid.bettercompat.molten_thallasium": "Molten Thallasium",
+
+  "item.bettercompat.aeternium_bucket": "Molten Aeternium Bucket",
+  "item.bettercompat.terminite_bucket": "Molten Termintie Bucket",
+  "item.bettercompat.thallasium_bucket": "Molten Thallasium Bucket",
+
+  "material.bettercompat.aeternium": "Aeternium",
+  "material.bettercompat.terminite": "Terminite",
+  "material.bettercompat.thallasium": "Thallasium",
+
+  "fluid.bettercompat.molten_amethyst": "Molten Amethyst",
+  "fluid.bettercompat.molten_blackopal": "Molten Black Opal",
+  "fluid.bettercompat.molten_netheriteopal": "Molten Netherite Opal",
+
+  "item.bettercompat.amethyst_bucket": "Molten Amethyst Bucket",
+  "item.bettercompat.blackopal_bucket": "Molten Black Opal Bucket",
+  "item.bettercompat.netheriteopal_bucket": "Molten Netherite Opal Bucket",
+
+  "material.bettercompat.amethyst": "Amethyst",
+  "material.bettercompat.blackopal": "Black Opal",
+  "material.bettercompat.netheriteopal": "Netherite Opal",
+
+  "fluid.bettercompat.molten_moonstone": "Molten Moonstone",
+  "item.bettercompat.moonstone_bucket": "Molten Moonstone Bucket",
+  "material.bettercompat.moonstone": "Moonstone",
+
+  "fluid.bettercompat.molten_endorium": "Molten Endorium",
+  "item.bettercompat.endorium_bucket": "Molten Endorium Bucket",
+  "material.bettercompat.endorium": "Endorium",
+
+  "fluid.bettercompat.molten_manasteel": "Molten Manasteel",
+  "fluid.bettercompat.molten_elementium": "Molten Elementium",
+  "fluid.bettercompat.molten_terrasteel": "Molten Terrasteel",
+
+  "item.bettercompat.manasteel_bucket": "Molten Manasteel Bucket",
+  "item.bettercompat.elementium_bucket": "Molten Elementium Bucket",
+  "item.bettercompat.terrasteel_bucket": "Molten Terrasteel Bucket",
+
+  "material.bettercompat.livingwood": "Livingwood",
+  "material.bettercompat.manasteel": "Manasteel",
+  "material.bettercompat.elementium": "Elementium",
+  "material.bettercompat.terrasteel": "Terrasteel",
+
+  "fluid.bettercompat.molten_certus_quartz": "Molten Certus Quartz",
+  "fluid.bettercompat.molten_fluix": "Molten Fluix",
+
+  "item.bettercompat.certus_quartz_bucket": "Molten Certus Quartz Bucket",
+  "item.bettercompat.fluix_bucket": "Molten Fluix Bucket",
+
+  "material.bettercompat.certus_quartz": "Certus Quartz",
+  "material.bettercompat.fluix": "Fluix",
+
+  "effect.bettercompat.enderference": "Enderference",
+
+  "modifier.bettercompat.enderference": "Enderference",
+  "modifier.bettercompat.enderference.flavor": "Endermatic!",
+  "modifier.bettercompat.enderference.description": "Prevents enderman from teleporting on attack",
+  "modifier.bettercompat.quartz_infused": "Quartz Infused",
+  "modifier.bettercompat.quartz_infused.flavor": "Clocky!",
+  "modifier.bettercompat.quartz_infused.description": "Damage is increased slightly due to quartz infusion",
+  "modifier.bettercompat.lava_efficiency": "Lava Efficiency",
+  "modifier.bettercompat.lava_efficiency.flavor": "Magmatic!",
+  "modifier.bettercompat.lava_efficiency.description": "Allows the user to mine faster and deal more damage while in lava",
+  "modifier.bettercompat.crystal_power": "Crystal Power",
+  "modifier.bettercompat.crystal_power.flavor": "Geode-like!",
+  "modifier.bettercompat.crystal_power.description": "Boosts the mining speed of the effected material",
+  "modifier.bettercompat.moonlight": "Moonlight",
+  "modifier.bettercompat.moonlight.flavor": "Lunar!",
+  "modifier.bettercompat.moonlight.description": "Buffs your tool during the night",
+  "modifier.bettercompat.elemental": "Elemental",
+  "modifier.bettercompat.elemental.flavor": "Element!",
+  "modifier.bettercompat.elemental.description": "Gives you random elemental effects after attacking a mob",
+  "modifier.bettercompat.inclined": "Inclined",
+  "modifier.bettercompat.inclined.flavor": "Lifted!",
+  "modifier.bettercompat.inclined.description": "Boosts your tool the higher up in the world you are",
+  "modifier.bettercompat.dark_might": "Dark Might",
+  "modifier.bettercompat.dark_might.flavor": "Sassy!",
+  "modifier.bettercompat.dark_might.description": "You may get a fight back if you're fighting special mobs"
+}

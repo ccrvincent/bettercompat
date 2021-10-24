@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/certus_quartz"
+  },
+  "result": {
+    "fluid": "bettercompat:molten_certus_quartz",
+    "amount": 1296
+  },
+  "temperature": 800,
+  "time": 200,
+  "conditions": [
+      {
+          "type": "forge:mod_loaded",
+          "modid": "tconstruct"
+      }
+  ]
+}
