@@ -1,6 +1,5 @@
 package com.bettercompat.main.modifiers;
 
-
 import net.minecraft.util.Direction;
 import net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed;
 import slimeknights.tconstruct.library.modifiers.Modifier;
@@ -12,9 +11,10 @@ public class CrystalPowerModifier extends Modifier {
 		super(0xB859CB);
 	}
 	
+	@Override
 	public void onBreakSpeed(IModifierToolStack tool, int level, BreakSpeed event, Direction sideHit, boolean isEffective, float miningSpeedModifier) {
 		if(isEffective) {
-			event.setNewSpeed(event.getNewSpeed() * (level * 2f));	
+			event.setNewSpeed(event.getNewSpeed() * (level * 0.5f));	
 		}
 	}
 }

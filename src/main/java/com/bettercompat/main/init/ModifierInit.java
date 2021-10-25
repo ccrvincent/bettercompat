@@ -3,8 +3,11 @@ package com.bettercompat.main.init;
 import com.bettercompat.main.BetterCompat;
 import com.bettercompat.main.modifiers.CrystalPowerModifier;
 import com.bettercompat.main.modifiers.DarkMightModifier;
+import com.bettercompat.main.modifiers.ElectricModifier;
 import com.bettercompat.main.modifiers.ElementalModifier;
 import com.bettercompat.main.modifiers.EnderferenceModifier;
+import com.bettercompat.main.modifiers.FieryModifier;
+import com.bettercompat.main.modifiers.IcyModifier;
 import com.bettercompat.main.modifiers.InclinedModifier;
 import com.bettercompat.main.modifiers.LavaEfficiencyModifier;
 import com.bettercompat.main.modifiers.MoonlightModifier;
@@ -25,6 +28,9 @@ public class ModifierInit {
 	public static final RegistryObject<Modifier> ELEMENTAL = MODIFIERS.register("elemental", ElementalModifier::new);
 	public static final RegistryObject<Modifier> INCLINED = MODIFIERS.register("inclined", InclinedModifier::new);
 	public static final RegistryObject<Modifier> DARK_MIGHT = MODIFIERS.register("dark_might", DarkMightModifier::new);
+	public static final RegistryObject<Modifier> FIERY = MODIFIERS.register("fiery", FieryModifier::new);
+	public static final RegistryObject<Modifier> ICY = MODIFIERS.register("icy", IcyModifier::new);
+	public static final RegistryObject<Modifier> ELECTRIC = MODIFIERS.register("electric", ElectricModifier::new);
 	
 
 }

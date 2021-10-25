@@ -53,6 +53,10 @@
   "material.bettercompat.certus_quartz": "Certus Quartz",
   "material.bettercompat.fluix": "Fluix",
 
+  "material.bettercompat.firedragonsteel": "Fire Dragonsteel",
+  "material.bettercompat.icedragonsteel": "Ice Dragonsteel",
+  "material.bettercompat.lightningdragonsteel": "Lightning Dragonsteel",
+
   "effect.bettercompat.enderference": "Enderference",
 
   "modifier.bettercompat.enderference": "Enderference",
@@ -78,5 +82,14 @@
   "modifier.bettercompat.inclined.description": "Boosts your tool the higher up in the world you are",
   "modifier.bettercompat.dark_might": "Dark Might",
   "modifier.bettercompat.dark_might.flavor": "Sassy!",
-  "modifier.bettercompat.dark_might.description": "You may get a fight back if you're fighting special mobs"
+  "modifier.bettercompat.dark_might.description": "You may get a fight back if you're fighting special mobs",
+  "modifier.bettercompat.fiery": "Fiery",
+  "modifier.bettercompat.fiery.flavor": "Spicy!",
+  "modifier.bettercompat.fiery.description": "Harness the power of the fire dragon and inflict fire upon your opponents",
+  "modifier.bettercompat.icy": "Icy",
+  "modifier.bettercompat.icy.flavor": "Chilly!",
+  "modifier.bettercompat.icy.description": "Harness the power of the ice dragon and freeze your opponents",
+  "modifier.bettercompat.electric": "Electric",
+  "modifier.bettercompat.electric.flavor": "Shocky!",
+  "modifier.bettercompat.electric.description": "Harness the power of the lightning dragon and electrocute your opponents"
 }

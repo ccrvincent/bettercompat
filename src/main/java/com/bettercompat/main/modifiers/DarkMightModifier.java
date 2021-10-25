@@ -21,8 +21,8 @@ public class DarkMightModifier extends Modifier {
 		LivingEntity attacker = context.getAttacker();
 		Entity target = context.getTarget();
 		if(attacker instanceof PlayerEntity && target instanceof MobEntity) {
-			if(damageDealt > 6) {
-				attacker.addEffect(new EffectInstance(Effects.HARM, level, (int) damageDealt/12));
+			if(damageDealt > 8) {
+				attacker.addEffect(new EffectInstance(Effects.HARM, level/6));
 			}
 		}
 		return 0;

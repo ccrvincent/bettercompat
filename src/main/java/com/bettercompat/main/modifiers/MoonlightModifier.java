@@ -1,6 +1,11 @@
 package com.bettercompat.main.modifiers;
 
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.Direction;
+import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
@@ -15,6 +20,13 @@ public class MoonlightModifier extends Modifier {
 	public void onBreakSpeed(IModifierToolStack tool, int level, BreakSpeed event, Direction sideHit, boolean isEffective, float miningSpeedModifier) {
 		if(event.getPlayer().level.isNight() && isEffective) {
 			event.setNewSpeed(event.getNewSpeed() * (level * 2f));
+		}
+	}
+	
+	@Override
+	public void onInventoryTick(IModifierToolStack tool, int level, World world, LivingEntity holder, int itemSlot, boolean isSelected, boolean isCorrectSlot, ItemStack stack) {
+		if (holder.isHolding(tool.getItem()) && world.isNight()) {
+			holder.addEffect(new EffectInstance(Effects.NIGHT_VISION, level * 100, 0));
 		}
 	}
 }
