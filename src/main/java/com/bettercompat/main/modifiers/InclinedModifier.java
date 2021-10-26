@@ -13,7 +13,7 @@ public class InclinedModifier extends Modifier {
 	
 	@Override
 	public void onBreakSpeed(IModifierToolStack tool, int level, BreakSpeed event, Direction sideHit, boolean isEffective, float miningSpeedModifier) {
-		if(event.getPlayer().level.getHeight() >= 110 && isEffective) {
+		if(event.getPlayer().world.getHeight() >= 110 && isEffective) {
 			event.setNewSpeed(event.getNewSpeed() * (level * 1.2f));
 		}
 	} 

@@ -22,15 +22,15 @@ public class IcyModifier extends Modifier {
 	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		LivingEntity target = context.getLivingTarget();
 		LivingEntity attacker = context.getAttacker();
-        if (attacker.isHolding(tool.getItem())) {
+        if (attacker.getHeldEquipment() == tool.getItem()) {
             if (target instanceof EntityFireDragon) {
-                target.hurt(DamageSource.DROWN, level + 12.5F);
+                target.attackEntityFrom(DamageSource.DROWN, level + 12.5F);
             }
             FrozenEntityProperties frozenProps = EntityPropertiesHandler.INSTANCE.getProperties(target, FrozenEntityProperties.class);
             frozenProps.setFrozenFor(200);
-            target.addEffect(new EffectInstance(Effects.MOVEMENT_SLOWDOWN, 100, 2));
-            target.addEffect(new EffectInstance(Effects.DIG_SLOWDOWN, 100, 2));
-            target.knockback(1F, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+            target.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 100, 2));
+            target.addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, 100, 2));
+            target.applyKnockback(1F, attacker.getPosX() - target.getPosX(), attacker.getPosZ() - target.getPosZ());
         }
 		return 0;
 	}

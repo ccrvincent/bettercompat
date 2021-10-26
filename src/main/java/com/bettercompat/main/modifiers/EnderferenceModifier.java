@@ -22,7 +22,7 @@ public class EnderferenceModifier extends Modifier {
 		LivingEntity livingTarget = context.getLivingTarget();	
 		int effectLevel = Math.min(8, EffectInit.ENDERFERENCE.get().getLevel(attacker) + 1);
 		if (damageDealt > 0) {
-			livingTarget.addEffect(new EffectInstance(EffectInit.ENDERFERENCE.get(), level * 50, effectLevel));
+			livingTarget.addPotionEffect(new EffectInstance(EffectInit.ENDERFERENCE.get(), level * 50, effectLevel));
 		}
 		return 0;
 	}

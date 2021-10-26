@@ -10,35 +10,33 @@ import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
 public class ElementalModifier extends Modifier {
 
 	public ElementalModifier() {
-		super(0xF697CB);
+		super(0xF15CAE);
 	}
 	
 	@Override
 	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		LivingEntity attacker = context.getAttacker();
-		LivingEntity target = context.getLivingTarget();
-		if (damageDealt > 0 && target.isAlive()) {
-			int rand = RANDOM.nextInt();
+		if (damageDealt > 2 && RANDOM.nextFloat() < 0.22f) {
+			int rand = RANDOM.nextInt(4);
 			switch (rand) {
 			case 0: // Water
-				attacker.addEffect(new EffectInstance(Effects.ABSORPTION, level * 50));
-				attacker.addEffect(new EffectInstance(Effects.WATER_BREATHING, level * 200));
+				attacker.addPotionEffect(new EffectInstance(Effects.ABSORPTION, level * 200));
+				attacker.addPotionEffect(new EffectInstance(Effects.WATER_BREATHING, level * 200));
 				break;
 			case 1: // Wind
-				attacker.addEffect(new EffectInstance(Effects.MOVEMENT_SPEED, level * 50));
-				attacker.addEffect(new EffectInstance(Effects.JUMP, level * 50));
+				attacker.addPotionEffect(new EffectInstance(Effects.SPEED, level * 200));
+				attacker.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, level * 200));
 				break;
 			case 2: // Earth
-				attacker.addEffect(new EffectInstance(Effects.DAMAGE_BOOST, level * 50));
-				attacker.addEffect(new EffectInstance(Effects.SATURATION, level * 50));
+				attacker.addPotionEffect(new EffectInstance(Effects.STRENGTH, level * 200));
+				attacker.addPotionEffect(new EffectInstance(Effects.SATURATION, level * 200));
 				break;
 			case 3: // Fire
-				attacker.addEffect(new EffectInstance(Effects.FIRE_RESISTANCE, level * 50));
-				attacker.addEffect(new EffectInstance(Effects.REGENERATION, level * 50));
+				attacker.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, level * 200));
+				attacker.addPotionEffect(new EffectInstance(Effects.REGENERATION, level * 200));
 				break;
 			}
 		}
 		return 0;
 	}
-
 }

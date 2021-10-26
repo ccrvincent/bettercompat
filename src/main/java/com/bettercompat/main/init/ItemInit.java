@@ -17,52 +17,52 @@ public class ItemInit {
     //better end
 	public static final RegistryObject<Item> THALLASIUM_BUCKET = ITEMS.register("thallasium_bucket", 
 			() -> new BucketItem(FluidInit.THALLASIUM,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("betterendforge") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("betterendforge") ? ItemGroup.MISC : null)));
 	public static final RegistryObject<Item> TERMINITE_BUCKET = ITEMS.register("terminite_bucket", 
 			() -> new BucketItem(FluidInit.TERMINITE,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("betterendforge") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("betterendforge") ? ItemGroup.MISC : null)));
 	public static final RegistryObject<Item> AETERNIUM_BUCKET = ITEMS.register("aeternium_bucket", 
 			() -> new BucketItem(FluidInit.AETERNIUM,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("betterendforge") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("betterendforge") ? ItemGroup.MISC : null)));
 	
 	//ores above diamonds
 	public static final RegistryObject<Item> AMETHYST_BUCKET = ITEMS.register("amethyst_bucket", 
 			() -> new BucketItem(FluidInit.AMETHYST,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("oresabovediamonds") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("oresabovediamonds") ? ItemGroup.MISC : null)));
 	public static final RegistryObject<Item> BLACKOPAL_BUCKET = ITEMS.register("blackopal_bucket", 
 			() -> new BucketItem(FluidInit.BLACKOPAL,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("oresabovediamonds") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("oresabovediamonds") ? ItemGroup.MISC : null)));
 	public static final RegistryObject<Item> NETHERITEOPAL_BUCKET = ITEMS.register("netheriteopal_bucket", 
 			() -> new BucketItem(FluidInit.NETHERITEOPAL,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("oresabovediamonds") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("oresabovediamonds") ? ItemGroup.MISC : null)));
 	
 	//endreborn
 	public static final RegistryObject<Item> ENDORIUM_BUCKET = ITEMS.register("endorium_bucket", 
 			() -> new BucketItem(FluidInit.ENDORIUM,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("endreborn") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("endreborn") ? ItemGroup.MISC : null)));
 	
 	//druidcraft
 	public static final RegistryObject<Item> MOONSTONE_BUCKET = ITEMS.register("moonstone_bucket", 
 			() -> new BucketItem(FluidInit.MOONSTONE,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("druidcraft") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("druidcraft") ? ItemGroup.MISC : null)));
 	
 	//botania
 	public static final RegistryObject<Item> MANASTEEL_BUCKET = ITEMS.register("manasteel_bucket", 
 			() -> new BucketItem(FluidInit.MANASTEEL,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("botania") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("botania") ? ItemGroup.MISC : null)));
 	public static final RegistryObject<Item> ELEMENTIUM_BUCKET = ITEMS.register("elementium_bucket", 
 			() -> new BucketItem(FluidInit.ELEMENTIUM,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("botania") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("botania") ? ItemGroup.MISC : null)));
 	public static final RegistryObject<Item> TERRASTEEL_BUCKET = ITEMS.register("terrasteel_bucket", 
 			() -> new BucketItem(FluidInit.TERRASTEEL,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("botania") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("botania") ? ItemGroup.MISC : null)));
 	
 	//ae2
 	public static final RegistryObject<Item> CERTUS_QUARTZ_BUCKET = ITEMS.register("certus_quartz_bucket",
 			() -> new BucketItem(FluidInit.CERTUS_QUARTZ,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("appliedenergistics2") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("appliedenergistics2") ? ItemGroup.MISC : null)));
 	public static final RegistryObject<Item> FLUIX_BUCKET = ITEMS.register("fluix_bucket",
 			() -> new BucketItem(FluidInit.FLUIX,
-					new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(ModList.get().isLoaded("appliedenergistics2") ? ItemGroup.TAB_MISC : null)));
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("appliedenergistics2") ? ItemGroup.MISC : null)));
 	
 }

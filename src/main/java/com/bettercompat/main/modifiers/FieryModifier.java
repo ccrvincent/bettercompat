@@ -18,12 +18,12 @@ public class FieryModifier extends Modifier {
 	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		LivingEntity attacker = context.getAttacker();
 		LivingEntity target = context.getLivingTarget();
-		if (attacker.isHolding(tool.getItem())) {
+		if (attacker.getHeldEquipment() == tool.getItem()) {
 			if (target instanceof EntityIceDragon) {
-				target.hurt(DamageSource.ON_FIRE, level + 12.5F);
+				target.attackEntityFrom(DamageSource.ON_FIRE, level + 12.5F);
 			}
-			target.setSecondsOnFire(5);
-			target.knockback(1F, attacker.getX(), attacker.getZ() - target.getZ());
+			target.setFire(5);
+			target.applyKnockback(1F, attacker.getPosX(), attacker.getPosZ() - target.getPosZ());
 		}
 		return 0;
 	}

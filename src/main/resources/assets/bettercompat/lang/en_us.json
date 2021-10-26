@@ -91,5 +91,17 @@
   "modifier.bettercompat.icy.description": "Harness the power of the ice dragon and freeze your opponents",
   "modifier.bettercompat.electric": "Electric",
   "modifier.bettercompat.electric.flavor": "Shocky!",
-  "modifier.bettercompat.electric.description": "Harness the power of the lightning dragon and electrocute your opponents"
+  "modifier.bettercompat.electric.description": "Harness the power of the lightning dragon and electrocute your opponents",
+  "modifier.bettercompat.ender_crushing": "Ender Crushing",
+  "modifier.bettercompat.ender_crushing.flavor": "Smashing!",
+  "modifier.bettercompat.ender_crushing.description": "Use the power of the End to increase your ability to mine End Stone",
+  "modifier.bettercompat.floras_blessing": "Flora's Blessing",
+  "modifier.bettercompat.floras_blessing.flavor": "Naturey!",
+  "modifier.bettercompat.floras_blessing.description": "Break a block or kill a mob for a surprise",
+  "modifier.bettercompat.holy": "Holy",
+  "modifier.bettercompat.holy.flavor": "Blessed Blade!",
+  "modifier.bettercompat.holy.description": "Let the undead fall to the might of your blade",
+  "modifier.bettercompat.mana": "Mana",
+  "modifier.bettercompat.mana.flavor": "Magical!",
+  "modifier.bettercompat.mana.description": "Uses mana to repair your tool over time! DOES NOT WORK YET"
 }

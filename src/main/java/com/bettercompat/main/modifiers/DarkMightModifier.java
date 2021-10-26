@@ -22,7 +22,7 @@ public class DarkMightModifier extends Modifier {
 		Entity target = context.getTarget();
 		if(attacker instanceof PlayerEntity && target instanceof MobEntity) {
 			if(damageDealt > 8) {
-				attacker.addEffect(new EffectInstance(Effects.HARM, level/6));
+				attacker.addPotionEffect(new EffectInstance(Effects.INSTANT_DAMAGE, level/6));
 			}
 		}
 		return 0;

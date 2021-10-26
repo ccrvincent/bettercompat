@@ -97,21 +97,21 @@ public class FluidInit {
     private static ForgeFlowingFluid.Properties makeMoltenThallasiumProperties() {
         return new ForgeFlowingFluid.Properties(THALLASIUM, flowing_THALLASIUM,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF79CFD2)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
         		.bucket(ItemInit.THALLASIUM_BUCKET).block(BlockInit.MOLTEN_THALLASIUM).explosionResistance(1000F).tickRate(9);
     }
 
     private static ForgeFlowingFluid.Properties makeMoltenTerminiteProperties() {
         return new ForgeFlowingFluid.Properties(TERMINITE, flowing_TERMINITE,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF34C8BD)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.TERMINITE_BUCKET).block(BlockInit.MOLTEN_TERMINITE).explosionResistance(1000F).tickRate(9);
     }
 
     private static ForgeFlowingFluid.Properties makeMoltenAeterniumProperties() {
         return new ForgeFlowingFluid.Properties(AETERNIUM, flowing_AETERNIUM,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF6B807F)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1500).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1500).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.AETERNIUM_BUCKET).block(BlockInit.MOLTEN_AETERNIUM).explosionResistance(1000F).tickRate(9);
     }
     
@@ -119,21 +119,21 @@ public class FluidInit {
     private static ForgeFlowingFluid.Properties makeMoltenAmethystProperties() {
         return new ForgeFlowingFluid.Properties(AMETHYST, flowing_AMETHYST,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFB859CB)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.AMETHYST_BUCKET).block(BlockInit.MOLTEN_AMETHYST).explosionResistance(1000F).tickRate(9);
     }
     
     private static ForgeFlowingFluid.Properties makeMoltenBlackOpalProperties() {
         return new ForgeFlowingFluid.Properties(BLACKOPAL, flowing_BLACKOPAL,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF130935)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.BLACKOPAL_BUCKET).block(BlockInit.MOLTEN_BLACKOPAL).explosionResistance(1000F).tickRate(9);
     }
     
     private static ForgeFlowingFluid.Properties makeMoltenNetheriteOpalProperties() {
         return new ForgeFlowingFluid.Properties(NETHERITEOPAL, flowing_NETHERITEOPAL,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF000017)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1500).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1500).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.NETHERITEOPAL_BUCKET).block(BlockInit.MOLTEN_NETHERITEOPAL).explosionResistance(1000F).tickRate(9);
     }
     
@@ -141,7 +141,7 @@ public class FluidInit {
     private static ForgeFlowingFluid.Properties makeMoltenEndoriumProperties() {
         return new ForgeFlowingFluid.Properties(ENDORIUM, flowing_ENDORIUM,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF105A4B)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.ENDORIUM_BUCKET).block(BlockInit.MOLTEN_ENDORIUM).explosionResistance(1000F).tickRate(9);
     }
     
@@ -149,7 +149,7 @@ public class FluidInit {
     private static ForgeFlowingFluid.Properties makeMoltenMoonstoneProperties() {
         return new ForgeFlowingFluid.Properties(MOONSTONE, flowing_MOONSTONE,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF6EB2EA)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.MOONSTONE_BUCKET).block(BlockInit.MOLTEN_MOONSTONE).explosionResistance(1000F).tickRate(9);
     }
     
@@ -157,21 +157,21 @@ public class FluidInit {
     private static ForgeFlowingFluid.Properties makeMoltenManasteelProperties() {
         return new ForgeFlowingFluid.Properties(MANASTEEL, flowing_MANASTEEL,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF4196DC)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
         		.bucket(ItemInit.MANASTEEL_BUCKET).block(BlockInit.MOLTEN_MANASTEEL).explosionResistance(1000F).tickRate(9);
     }
 
     private static ForgeFlowingFluid.Properties makeMoltenElementiumProperties() {
         return new ForgeFlowingFluid.Properties(ELEMENTIUM, flowing_ELEMENTIUM,
-                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFF697CB)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFF15CAE)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.ELEMENTIUM_BUCKET).block(BlockInit.MOLTEN_ELEMENTIUM).explosionResistance(1000F).tickRate(9);
     }
 
     private static ForgeFlowingFluid.Properties makeMoltenTerrasteelProperties() {
         return new ForgeFlowingFluid.Properties(TERRASTEEL, flowing_TERRASTEEL,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF58FF0B)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1500).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1500).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.TERRASTEEL_BUCKET).block(BlockInit.MOLTEN_TERRASTEEL).explosionResistance(1000F).tickRate(9);
     }
     
@@ -179,14 +179,14 @@ public class FluidInit {
     private static ForgeFlowingFluid.Properties makeMoltenCertusQuartzProperties() {
         return new ForgeFlowingFluid.Properties(CERTUS_QUARTZ, flowing_CERTUS_QUARTZ,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFDFEDFB)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
         		.bucket(ItemInit.CERTUS_QUARTZ_BUCKET).block(BlockInit.MOLTEN_CERTUS_QUARTZ).explosionResistance(1000F).tickRate(9);
     }
 
     private static ForgeFlowingFluid.Properties makeMoltenFluixProperties() {
         return new ForgeFlowingFluid.Properties(FLUIX, flowing_FLUIX,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF915DCD)
-                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.FLUIX_BUCKET).block(BlockInit.MOLTEN_FLUIX).explosionResistance(1000F).tickRate(9);
     }
 }

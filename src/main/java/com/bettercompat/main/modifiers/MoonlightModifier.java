@@ -18,15 +18,15 @@ public class MoonlightModifier extends Modifier {
 	
 	@Override
 	public void onBreakSpeed(IModifierToolStack tool, int level, BreakSpeed event, Direction sideHit, boolean isEffective, float miningSpeedModifier) {
-		if(event.getPlayer().level.isNight() && isEffective) {
-			event.setNewSpeed(event.getNewSpeed() * (level * 2f));
+		if(event.getPlayer().world.isNightTime() && isEffective) {
+			event.setNewSpeed(event.getNewSpeed() * (level * 0.5f));
 		}
 	}
 	
 	@Override
 	public void onInventoryTick(IModifierToolStack tool, int level, World world, LivingEntity holder, int itemSlot, boolean isSelected, boolean isCorrectSlot, ItemStack stack) {
-		if (holder.isHolding(tool.getItem()) && world.isNight()) {
-			holder.addEffect(new EffectInstance(Effects.NIGHT_VISION, level * 100, 0));
+		if (holder.getHeldEquipment() == tool.getItem() && world.isNightTime()) {
+			holder.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, level * 100, 0));
 		}
 	}
 }

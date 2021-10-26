@@ -18,10 +18,10 @@ public class LavaEfficiencyModifier extends Modifier {
 	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		Entity attacker = context.getAttacker();
 		Entity target = context.getTarget();
-		if(attacker.isEyeInFluid(FluidTags.LAVA)) {
+		if(attacker.areEyesInFluid(FluidTags.LAVA)) {
 			return super.afterEntityHit(tool, level, context, damageDealt) * 2;
 		}
-		if(target.isEyeInFluid(FluidTags.LAVA)) {
+		if(target.areEyesInFluid(FluidTags.LAVA)) {
 			return super.afterEntityHit(tool, level, context, damageDealt) * 2;
 		}
 		return super.afterEntityHit(tool, level, context, damageDealt);	
@@ -29,7 +29,7 @@ public class LavaEfficiencyModifier extends Modifier {
 	
 	@Override
 	public void onBreakSpeed(IModifierToolStack tool, int level, BreakSpeed event, Direction sideHit, boolean isEffective, float miningSpeedModifier) {
-		if (isEffective && event.getEntityLiving().isEyeInFluid(FluidTags.LAVA)) {
+		if (isEffective && event.getEntityLiving().areEyesInFluid(FluidTags.LAVA)) {
 			event.setNewSpeed(event.getNewSpeed() * (level * 2f));
 		}
 	}

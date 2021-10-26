@@ -5,11 +5,15 @@ import com.bettercompat.main.modifiers.CrystalPowerModifier;
 import com.bettercompat.main.modifiers.DarkMightModifier;
 import com.bettercompat.main.modifiers.ElectricModifier;
 import com.bettercompat.main.modifiers.ElementalModifier;
+import com.bettercompat.main.modifiers.EnderCrushingModifier;
 import com.bettercompat.main.modifiers.EnderferenceModifier;
 import com.bettercompat.main.modifiers.FieryModifier;
+import com.bettercompat.main.modifiers.FlorasBlessingModifier;
+import com.bettercompat.main.modifiers.HolyModifier;
 import com.bettercompat.main.modifiers.IcyModifier;
 import com.bettercompat.main.modifiers.InclinedModifier;
 import com.bettercompat.main.modifiers.LavaEfficiencyModifier;
+import com.bettercompat.main.modifiers.ManaModifier;
 import com.bettercompat.main.modifiers.MoonlightModifier;
 import com.bettercompat.main.modifiers.QuartzInfusedModifier;
 
@@ -31,6 +35,10 @@ public class ModifierInit {
 	public static final RegistryObject<Modifier> FIERY = MODIFIERS.register("fiery", FieryModifier::new);
 	public static final RegistryObject<Modifier> ICY = MODIFIERS.register("icy", IcyModifier::new);
 	public static final RegistryObject<Modifier> ELECTRIC = MODIFIERS.register("electric", ElectricModifier::new);
+	public static final RegistryObject<Modifier> ENDER_CRUSHING = MODIFIERS.register("ender_crushing", EnderCrushingModifier::new);
+	public static final RegistryObject<Modifier> FLORAS_BLESSING = MODIFIERS.register("floras_blessing", FlorasBlessingModifier::new);
+	public static final RegistryObject<Modifier> HOLY = MODIFIERS.register("holy", HolyModifier::new);
+	public static final RegistryObject<Modifier> MANA = MODIFIERS.register("mana", ManaModifier::new);
 	
 
 }

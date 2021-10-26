@@ -22,24 +22,24 @@ public class ElectricModifier extends Modifier {
 	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		LivingEntity attacker = context.getAttacker();
 		LivingEntity target = context.getLivingTarget();
-		if (attacker.isHolding(tool.getItem())) {
+		if (attacker.getHeldEquipment() == tool.getItem()) {
             boolean flag = true;
             if(attacker instanceof PlayerEntity){
-                if(((PlayerEntity)attacker).swingTime > 0.2){
+                if(((PlayerEntity)attacker).swingProgress > 0.2){
                     flag = false;
                 }
             }
-            if(!attacker.level.isClientSide && flag){
-                LightningBoltEntity lightningboltentity = EntityType.LIGHTNING_BOLT.create(target.level);
-                lightningboltentity.moveTo(target.position());
-                if(!target.level.isClientSide){
-                    target.level.addFreshEntity(lightningboltentity);
+            if(!attacker.world.isRemote && flag){
+                LightningBoltEntity lightningboltentity = EntityType.LIGHTNING_BOLT.create(target.world);
+                lightningboltentity.moveForced(target.getPositionVec());
+                if(!target.world.isRemote){
+                    target.world.addEntity(lightningboltentity);
                 }
             }
             if (target instanceof EntityFireDragon || target instanceof EntityIceDragon) {
-                target.hurt(DamageSource.LIGHTNING_BOLT, level + 8.5F);
+                target.attackEntityFrom(DamageSource.LIGHTNING_BOLT, level + 8.5F);
             }
-            target.knockback(1F, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+            target.applyKnockback(1F, attacker.getPosX() - target.getPosX(), attacker.getPosZ() - target.getPosZ());
         }
 		return 0;
 	}
