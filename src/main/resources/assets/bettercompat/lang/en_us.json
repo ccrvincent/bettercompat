@@ -61,6 +61,10 @@
   "material.bettercompat.elementium": "Elementium",
   "material.bettercompat.terrasteel": "Terrasteel",
 
+  "fluid.bettercompat.molten_alfsteel": "Molten Alfsteel",
+  "item.bettercompat.alfsteel_bucket": "Molten Alfsteel Bucket",
+  "material.bettercompat.alfsteel": "Alfsteel",
+
   "fluid.bettercompat.molten_certus_quartz": "Molten Certus Quartz",
   "fluid.bettercompat.molten_fluix": "Molten Fluix",
 
