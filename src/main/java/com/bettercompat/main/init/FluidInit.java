@@ -65,6 +65,24 @@ public class FluidInit {
     public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_MOONSTONE = FLUIDS.register("flowing_molten_moonstone",
             () -> new ForgeFlowingFluid.Flowing(makeMoltenMoonstoneProperties()));
     
+    	//cyclic
+    public static final RegistryObject<ForgeFlowingFluid.Source> CRYSTALLIZED_OBSIDIAN = FLUIDS.register("molten_crystallized_obsidian", 
+    		() -> new ForgeFlowingFluid.Source(makeCrystallizedObsidianProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_CRYSTALLIZED_OBSIDIAN = FLUIDS.register("flowing_molten_crystallized_obsidian", 
+    		() -> new ForgeFlowingFluid.Flowing(makeCrystallizedObsidianProperties()));
+    
+    	//enderium
+    public static final RegistryObject<ForgeFlowingFluid.Source> ENDERIUM = FLUIDS.register("molten_enderium", 
+    		() -> new ForgeFlowingFluid.Source(makeEnderiumProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_ENDERIUM = FLUIDS.register("flowing_molten_enderium", 
+    		() -> new ForgeFlowingFluid.Flowing(makeEnderiumProperties()));
+    	
+    //vulcanite
+    public static final RegistryObject<ForgeFlowingFluid.Source> VULCANITE = FLUIDS.register("molten_vulcanite", 
+    		() -> new ForgeFlowingFluid.Source(makeVulcaniteProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_VULCANITE = FLUIDS.register("flowing_molten_vulcanite", 
+    		() -> new ForgeFlowingFluid.Flowing(makeVulcaniteProperties()));
+    
     	//botania
     public static final RegistryObject<ForgeFlowingFluid.Source> MANASTEEL = FLUIDS.register("molten_manasteel",
             () -> new ForgeFlowingFluid.Source(makeMoltenManasteelProperties()));
@@ -151,6 +169,30 @@ public class FluidInit {
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF6EB2EA)
                         .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.MOONSTONE_BUCKET).block(BlockInit.MOLTEN_MOONSTONE).explosionResistance(1000F).tickRate(9);
+    }
+    
+    	//cyclic
+    private static ForgeFlowingFluid.Properties makeCrystallizedObsidianProperties() {
+        return new ForgeFlowingFluid.Properties(CRYSTALLIZED_OBSIDIAN, flowing_CRYSTALLIZED_OBSIDIAN,
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF702EAD)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
+                .bucket(ItemInit.CRYSTALLIZED_OBSIDIAN_BUCKET).block(BlockInit.MOLTEN_CRYSTALLIZED_OBSIDIAN).explosionResistance(1000F).tickRate(9);
+    }
+    
+    	//enderium
+    private static ForgeFlowingFluid.Properties makeEnderiumProperties() {
+        return new ForgeFlowingFluid.Properties(ENDERIUM, flowing_ENDERIUM,
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFD17CFF)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
+                .bucket(ItemInit.ENDERIUM_BUCKET).block(BlockInit.MOLTEN_ENDERIUM).explosionResistance(1000F).tickRate(9);
+    }
+    
+    	//vulcanite
+    private static ForgeFlowingFluid.Properties makeVulcaniteProperties() {
+        return new ForgeFlowingFluid.Properties(VULCANITE, flowing_VULCANITE,
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFFF3300)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
+                .bucket(ItemInit.VULCANITE_BUCKET).block(BlockInit.MOLTEN_VULCANITE).explosionResistance(1000F).tickRate(9);
     }
     
     	//botania

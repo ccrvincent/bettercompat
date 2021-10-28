@@ -44,6 +44,21 @@ public class BlockInit {
             .register("molten_moonstone_block", () -> new FlowingFluidBlock(FluidInit.MOONSTONE,
                     Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
     
+    //cyclic
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_CRYSTALLIZED_OBSIDIAN = BLOCKS
+            .register("molten_crystallized_obsidian_block", () -> new FlowingFluidBlock(FluidInit.CRYSTALLIZED_OBSIDIAN,
+                    Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
+    
+    //enderium
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_ENDERIUM = BLOCKS
+            .register("molten_enderium_block", () -> new FlowingFluidBlock(FluidInit.ENDERIUM,
+                    Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
+    
+    //vulcanite
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_VULCANITE = BLOCKS
+            .register("molten_vulcanite_block", () -> new FlowingFluidBlock(FluidInit.VULCANITE,
+                    Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
+    
     //botania
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_MANASTEEL = BLOCKS
             .register("molten_manasteel_block", () -> new FlowingFluidBlock(FluidInit.MANASTEEL,

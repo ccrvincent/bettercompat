@@ -1,4 +1,8 @@
 {
+  "material.bettercompat.blaze_rod": "Blaze",
+  "material.bettercompat.diamond": "Diamond",
+  "material.bettercompat.emerald": "Emerald",
+
   "fluid.bettercompat.molten_aeternium": "Molten Aeternium",
   "fluid.bettercompat.molten_terminite": "Molten Terminite",
   "fluid.bettercompat.molten_thallasium": "Molten Thallasium",
@@ -26,6 +30,19 @@
   "fluid.bettercompat.molten_moonstone": "Molten Moonstone",
   "item.bettercompat.moonstone_bucket": "Molten Moonstone Bucket",
   "material.bettercompat.moonstone": "Moonstone",
+  "material.bettercompat.amber": "Amber",
+
+  "fluid.bettercompat.molten_crystallized_obsidian": "Molten Crystallized Obsidian",
+  "item.bettercompat.crystallized_obsidian_bucket": "Molten Crystallized Obsidian Bucket",
+  "material.bettercompat.crystallized_obsidian": "Crystal",
+
+  "fluid.bettercompat.molten_enderium": "Molten Enderium",
+  "item.bettercompat.enderium_bucket": "Molten Enderium Bucket",
+  "material.bettercompat.enderium": "Enderium",
+
+  "fluid.bettercompat.molten_vulcanite": "Molten Vulcanite",
+  "item.bettercompat.vulcanite_bucket": "Molten Vulcanite Bucket",
+  "material.bettercompat.vulcanite": "Vulcanite",
 
   "fluid.bettercompat.molten_endorium": "Molten Endorium",
   "item.bettercompat.endorium_bucket": "Molten Endorium Bucket",
@@ -59,6 +76,12 @@
 
   "effect.bettercompat.enderference": "Enderference",
 
+  "modifier.bettercompat.crystallized": "Crystallized",
+  "modifier.bettercompat.crystallized.flavor": "Sharp!",
+  "modifier.bettercompat.crystallized.description": "Boosts the damage of your tool with the sharpness of the crystal",
+  "modifier.bettercompat.barterable": "Barterable",
+  "modifier.bettercompat.barterable.flavor": "Moneylike!",
+  "modifier.bettercompat.barterable.description": "Lowers the prices of all villager trades when held in either hand",
   "modifier.bettercompat.enderference": "Enderference",
   "modifier.bettercompat.enderference.flavor": "Endermatic!",
   "modifier.bettercompat.enderference.description": "Prevents enderman from teleporting on attack",
@@ -103,5 +126,17 @@
   "modifier.bettercompat.holy.description": "Let the undead fall to the might of your blade",
   "modifier.bettercompat.mana": "Mana",
   "modifier.bettercompat.mana.flavor": "Magical!",
-  "modifier.bettercompat.mana.description": "Uses mana to repair your tool over time! DOES NOT WORK YET"
+  "modifier.bettercompat.mana.description": "Uses mana to repair your tool over time",
+  "modifier.bettercompat.clime": "Clime",
+  "modifier.bettercompat.clime.flavor": "Climate Based!",
+  "modifier.bettercompat.clime.description": "The lower the temperature, the weaker the boost",
+  "modifier.bettercompat.obsidianified": "Obsidianified",
+  "modifier.bettercompat.obsidianified.flavor": "Extreme Resistance!",
+  "modifier.bettercompat.obsidianified.description": "Depending on the fluid, water or lava, your tools efficiency will differ. ALSO INDESTRUCTIBLE!",
+  "modifier.bettercompat.superheated": "Superheated",
+  "modifier.bettercompat.superheated.flavor": "Scorching!",
+  "modifier.bettercompat.superheated.description": "Deals bonus damage to mobs that are immune to fire, sets non-immune mobs on fire, and boosts mining speed in the Nether",
+  "modifier.bettercompat.rising": "Rising",
+  "modifier.bettercompat.rising.flavor": "Uplifting!",
+  "modifier.bettercompat.rising.description": "Raises mobs off of the ground when hit"
 }

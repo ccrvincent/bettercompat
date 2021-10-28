@@ -8,6 +8,8 @@ import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
 
 public class HolyModifier extends Modifier {
 
+	//pulled from older Tinkers Construct alpha
+	
 	private final CreatureAttribute type;
 	public HolyModifier() {
 		super(0x79cfd2);

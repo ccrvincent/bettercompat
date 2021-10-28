@@ -12,13 +12,17 @@
       {
         "modid": "cyclic",
         "type": "forge:mod_loaded"
+      },
+      {
+        "modid": "betterendforge",
+        "type": "forge:mod_loaded"
       }
     ],
     "type": "forge:or"
   },
-  "craftable": false,
-  "tier": 4,
+  "craftable": true,
+  "tier": 1,
   "sortOrder": 2,
-  "textColor": "#6b807f",
+  "textColor": "#ff9031",
   "hidden": false
 }

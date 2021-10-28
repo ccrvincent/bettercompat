@@ -22,24 +22,24 @@ public class ElectricModifier extends Modifier {
 	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		LivingEntity attacker = context.getAttacker();
 		LivingEntity target = context.getLivingTarget();
-		if (attacker.getHeldEquipment() == tool.getItem()) {
-            boolean flag = true;
-            if(attacker instanceof PlayerEntity){
-                if(((PlayerEntity)attacker).swingProgress > 0.2){
-                    flag = false;
-                }
-            }
-            if(!attacker.world.isRemote && flag){
-                LightningBoltEntity lightningboltentity = EntityType.LIGHTNING_BOLT.create(target.world);
-                lightningboltentity.moveForced(target.getPositionVec());
-                if(!target.world.isRemote){
-                    target.world.addEntity(lightningboltentity);
-                }
-            }
-            if (target instanceof EntityFireDragon || target instanceof EntityIceDragon) {
-                target.attackEntityFrom(DamageSource.LIGHTNING_BOLT, level + 8.5F);
-            }
-            target.applyKnockback(1F, attacker.getPosX() - target.getPosX(), attacker.getPosZ() - target.getPosZ());
+        boolean flag = true;
+        if (attacker.canEquip(tool.getItem())) {
+        	if (attacker instanceof PlayerEntity){
+        		if(((PlayerEntity)attacker).swingProgress > 0.2){
+        			flag = false;
+        		}
+        	}
+        	if (!attacker.world.isRemote && flag){
+        		LightningBoltEntity lightningboltentity = EntityType.LIGHTNING_BOLT.create(target.world);
+        		lightningboltentity.moveForced(target.getPositionVec());
+        		if(!target.world.isRemote){
+        			target.world.addEntity(lightningboltentity);
+        		}
+        	}
+        	if (target instanceof EntityFireDragon || target instanceof EntityIceDragon) {
+        		target.attackEntityFrom(DamageSource.LIGHTNING_BOLT, level + 8.5F);
+        	}
+        	target.applyKnockback(1F, attacker.getPosX() - target.getPosX(), attacker.getPosZ() - target.getPosZ());
         }
 		return 0;
 	}

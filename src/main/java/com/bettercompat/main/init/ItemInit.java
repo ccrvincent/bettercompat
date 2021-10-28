@@ -46,6 +46,21 @@ public class ItemInit {
 			() -> new BucketItem(FluidInit.MOONSTONE,
 					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("druidcraft") ? ItemGroup.MISC : null)));
 	
+	//cyclic
+	public static final RegistryObject<Item> CRYSTALLIZED_OBSIDIAN_BUCKET = ITEMS.register("crystallized_obsidian_bucket", 
+			() -> new BucketItem(FluidInit.CRYSTALLIZED_OBSIDIAN,
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("cyclic") ? ItemGroup.MISC : null)));
+	
+	//enderium
+	public static final RegistryObject<Item> ENDERIUM_BUCKET = ITEMS.register("enderium_bucket", 
+			() -> new BucketItem(FluidInit.ENDERIUM,
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("enderium") ? ItemGroup.MISC : null)));
+	
+	//vulcanite
+	public static final RegistryObject<Item> VULCANITE_BUCKET = ITEMS.register("vulcanite_bucket", 
+			() -> new BucketItem(FluidInit.VULCANITE,
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("vulcanite") ? ItemGroup.MISC : null)));
+	
 	//botania
 	public static final RegistryObject<Item> MANASTEEL_BUCKET = ITEMS.register("manasteel_bucket", 
 			() -> new BucketItem(FluidInit.MANASTEEL,

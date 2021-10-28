@@ -25,5 +25,4 @@ public class BetterCompat
         ModifierInit.MODIFIERS.register(modEventBus);
         
     }
-
 }
