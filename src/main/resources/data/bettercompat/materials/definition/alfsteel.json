@@ -12,7 +12,7 @@
     ],
     "type": "forge:or"
   },
-  "craftable": true,
+  "craftable": false,
   "tier": 4,
   "sortOrder": 2,
   "textColor": "#ffc54f",

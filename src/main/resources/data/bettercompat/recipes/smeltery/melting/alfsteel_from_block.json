@@ -12,16 +12,16 @@
     ],
     "type": "forge:or"
   },
-  "type": "tconstruct:ore_melting",
+  "type": "tconstruct:melting",
   "ingredient": {
-    "item": "mythicbotany:elementium_ore"
+    "item": "mythicbotany:alfsteel_block"
   },
   "result": {
-    "fluid": "bettercompat:molten_elementium",
-    "amount": 144
+    "fluid": "bettercompat:molten_alfsteel",
+    "amount": 1296
   },
-  "temperature": 1000,
-  "time": 100,
+  "temperature": 1500,
+  "time": 200,
   "conditions": [
       {
           "type": "forge:mod_loaded",
