@@ -12,10 +12,12 @@ import com.bettercompat.main.modifiers.EnderCrushingModifier;
 import com.bettercompat.main.modifiers.EnderferenceModifier;
 import com.bettercompat.main.modifiers.FieryModifier;
 import com.bettercompat.main.modifiers.FlorasBlessingModifier;
+import com.bettercompat.main.modifiers.GreaterManaBurstModifier;
 import com.bettercompat.main.modifiers.HolyModifier;
 import com.bettercompat.main.modifiers.IcyModifier;
 import com.bettercompat.main.modifiers.InclinedModifier;
 import com.bettercompat.main.modifiers.LavaEfficiencyModifier;
+import com.bettercompat.main.modifiers.LesserManaBurstModifier;
 import com.bettercompat.main.modifiers.ManaModifier;
 import com.bettercompat.main.modifiers.MoonlightModifier;
 import com.bettercompat.main.modifiers.ObsidianifiedModifier;
@@ -51,5 +53,7 @@ public class ModifierInit {
 	public static final RegistryObject<Modifier> BARTERABLE = MODIFIERS.register("barterable", BarterableModifier::new);
 	public static final RegistryObject<Modifier> SUPERHEATED = MODIFIERS.register("superheated", SuperheatedModifier::new);
 	public static final RegistryObject<Modifier> RISING = MODIFIERS.register("rising", RisingModifier::new);
+	public static final RegistryObject<Modifier> LESSER_MANA_BURST = MODIFIERS.register("lesser_mana_burst", LesserManaBurstModifier::new);
+	public static final RegistryObject<Modifier> GREATER_MANA_BURST = MODIFIERS.register("greater_mana_burst", GreaterManaBurstModifier::new);
 
 }

@@ -26,7 +26,6 @@ import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.recipe.SingleItemInventory;
 import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
-import slimeknights.tconstruct.library.tools.stat.ToolStats;
 
 public class SuperheatedModifier extends Modifier {
 	
@@ -56,7 +55,7 @@ public class SuperheatedModifier extends Modifier {
 			if (!target.isImmuneToFire()) {
 				return damage;
 			}
-			float toolDamage = tool.getModifier(ToolStats.ATTACK_DAMAGE);
+			float toolDamage = tool.getDamage();
 			float bonus = toolDamage + (16f / 100f);
 			damage += bonus + level;
 		}

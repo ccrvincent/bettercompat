@@ -72,6 +72,11 @@ public class ItemInit {
 			() -> new BucketItem(FluidInit.TERRASTEEL,
 					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("botania") ? ItemGroup.MISC : null)));
 	
+	//mythic botany
+	public static final RegistryObject<Item> ALFSTEEL_BUCKET = ITEMS.register("alfsteel_bucket", 
+			() -> new BucketItem(FluidInit.ALFSTEEL,
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("mythicbotany") ? ItemGroup.MISC : null)));
+	
 	//ae2
 	public static final RegistryObject<Item> CERTUS_QUARTZ_BUCKET = ITEMS.register("certus_quartz_bucket",
 			() -> new BucketItem(FluidInit.CERTUS_QUARTZ,

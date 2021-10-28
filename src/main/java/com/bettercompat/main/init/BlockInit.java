@@ -70,6 +70,11 @@ public class BlockInit {
             .register("molten_terrasteel_block", () -> new FlowingFluidBlock(FluidInit.TERRASTEEL,
                     Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
     
+    //mythic botany
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_ALFSTEEL = BLOCKS
+            .register("molten_alfsteel_block", () -> new FlowingFluidBlock(FluidInit.ALFSTEEL,
+                    Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
+    
     //ae2
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_CERTUS_QUARTZ = BLOCKS
             .register("molten_certus_quartz_block", () -> new FlowingFluidBlock(FluidInit.CERTUS_QUARTZ,

@@ -106,7 +106,7 @@ dependencies {
     implementation fg.deobf ("vazkii.patchouli:Patchouli:${patchouli_version}")
     implementation fg.deobf ("top.theillusivec4.curios:curios-forge:${minecraft_version}-${curios_version}")
 
-    implementation fg.deobf ("curse.maven:enderium-401400:${enderium_version}")
+    implementation fg.deobf ("curse.maven:mythicbotany-400058:${mythicbotany_version}")
 }
 
 jar {

@@ -99,6 +99,12 @@ public class FluidInit {
     public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_TERRASTEEL = FLUIDS.register("flowing_molten_terrasteel",
             () -> new ForgeFlowingFluid.Flowing(makeMoltenTerrasteelProperties()));
     
+    	//mythic botany
+    public static final RegistryObject<ForgeFlowingFluid.Source> ALFSTEEL = FLUIDS.register("molten_alfsteel",
+            () -> new ForgeFlowingFluid.Source(makeMoltenAlfsteelProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_ALFSTEEL = FLUIDS.register("flowing_molten_alfsteel",
+            () -> new ForgeFlowingFluid.Flowing(makeMoltenAlfsteelProperties()));
+    
     //ae2
     public static final RegistryObject<ForgeFlowingFluid.Source> CERTUS_QUARTZ = FLUIDS.register("molten_certus_quartz",
             () -> new ForgeFlowingFluid.Source(makeMoltenCertusQuartzProperties()));
@@ -215,6 +221,13 @@ public class FluidInit {
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF58FF0B)
                         .luminosity(15).density(3000).viscosity(6000).temperature(1500).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.TERRASTEEL_BUCKET).block(BlockInit.MOLTEN_TERRASTEEL).explosionResistance(1000F).tickRate(9);
+    }
+    
+    private static ForgeFlowingFluid.Properties makeMoltenAlfsteelProperties() {
+        return new ForgeFlowingFluid.Properties(ALFSTEEL, flowing_ALFSTEEL,
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFFFC54F)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1500).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
+                .bucket(ItemInit.ALFSTEEL_BUCKET).block(BlockInit.MOLTEN_ALFSTEEL).explosionResistance(1000F).tickRate(9);
     }
     
     //ae2

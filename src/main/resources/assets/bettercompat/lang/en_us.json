@@ -138,5 +138,11 @@
   "modifier.bettercompat.superheated.description": "Deals bonus damage to mobs that are immune to fire, sets non-immune mobs on fire, and boosts mining speed in the Nether",
   "modifier.bettercompat.rising": "Rising",
   "modifier.bettercompat.rising.flavor": "Uplifting!",
-  "modifier.bettercompat.rising.description": "Raises mobs off of the ground when hit"
+  "modifier.bettercompat.rising.description": "Raises mobs off of the ground when hit",
+  "modifier.bettercompat.lesser_mana_burst": "Lesser Mana Burst",
+  "modifier.bettercompat.lesser_mana_burst.flavor": "Magical! (part 2)",
+  "modifier.bettercompat.lesser_mana_burst.description": "Sends a burst of mana to your enemies for an extra touch of damage",
+  "modifier.bettercompat.greater_mana_burst": "Greater Mana Burst",
+  "modifier.bettercompat.greater_mana_burst.flavor": "Magical! (part 3)",
+  "modifier.bettercompat.greater_mana_burst.description": "Sends a stronger burst of mana to your enemies for an extra touch of damage"
 }
