@@ -1,38 +1,51 @@
 package com.bettercompat.main.modifiers;
 
-import com.bettercompat.main.init.EffectInit;
-
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.monster.EndermanEntity;
 import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.EffectType;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import slimeknights.tconstruct.common.TinkerEffect;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
 
 public class EnderferenceModifier extends Modifier {
 	
+	public static TinkerEffect Enderference = new TinkerEffect(EffectType.NEUTRAL, 0x105a4b, true);
+
 	public EnderferenceModifier() {
-		super(0x105A4B);
+		super(0x105a4b);
+
+		MinecraftForge.EVENT_BUS.register(this);
 	}
-	
+
+	@Override
+	public float beforeEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damage, float baseKnockback, float knockback) {
+		LivingEntity target = context.getLivingTarget();
+		if(target instanceof EndermanEntity) {
+			EffectInstance effect = new EffectInstance(Enderference, 100, 1, false, true);
+			target.addPotionEffect(effect);
+		}
+		return knockback;
+	}
+
 	@Override
 	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		LivingEntity attacker = context.getAttacker();
-		LivingEntity livingTarget = context.getLivingTarget();	
-		int effectLevel = Math.min(8, EffectInit.ENDERFERENCE.get().getLevel(attacker) + 1);
-		if (damageDealt > 0) {
-			livingTarget.addPotionEffect(new EffectInstance(EffectInit.ENDERFERENCE.get(), level * 50, effectLevel));
+		LivingEntity target = context.getLivingTarget();
+		if(target.hitByEntity(attacker)) {
+			target.removePotionEffect(Enderference);
 		}
-		return 0;
-	}
-	
-	@SubscribeEvent
-	public void onEnderTeleport(EnderTeleportEvent event) {
-		if(EffectInit.ENDERFERENCE.get().getLevel(event.getEntityLiving()) > 0) {
-			event.setCanceled(true);
-			event.isCanceled();
-		}
+		return level;
 	}
 
+	@SubscribeEvent
+	public void onEnderTeleport(EnderTeleportEvent event) {
+		if(Enderference.getLevel(event.getEntityLiving()) > 0) {
+			event.setCanceled(true);
+		}
+	}
 }

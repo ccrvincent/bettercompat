@@ -32,7 +32,7 @@ public class ManaModifier extends Modifier implements IManaUsingItem {
          else 
             manaToUse = LVL_1;
 		if (!world.isRemote && holder instanceof PlayerEntity && stack.getDamage() > 0 
-				&& ManaItemHandler.instance().requestManaExactForTool(stack, (PlayerEntity) holder, manaToUse * 2, true)) {
+				&& ManaItemHandler.instance().requestManaExactForTool(stack, (PlayerEntity) holder, manaToUse, true)) {
 			stack.setDamage(stack.getDamage() - 1);
 		}
 	}
