@@ -90,4 +90,14 @@ public class CompatItems {
 			() -> new BucketItem(CompatFluids.FLUIX,
 					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("appliedenergistics2") ? ItemGroup.MISC : null)));
 	
+	//malum
+	public static final RegistryObject<Item> SOUL_STAINED_STEEL_BUCKET = ITEMS.register("soul_stained_steel_bucket",
+			() -> new BucketItem(CompatFluids.SOUL_STAINED_STEEL,
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("malum") ? ItemGroup.MISC : null)));
+	
+	//undead expansion
+	public static final RegistryObject<Item> SHADOWSTEEL_BUCKET = ITEMS.register("shadowsteel_bucket",
+			() -> new BucketItem(CompatFluids.SHADOWSTEEL,
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("undead_expansion") ? ItemGroup.MISC : null)));
+	
 }

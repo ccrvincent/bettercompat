@@ -1,0 +1,34 @@
+{
+  "type": "tconstruct:modifier",
+  "conditions": [
+    {
+      "modid": "malum",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "malum:soulstone"
+    },
+    {
+      "item": "malum:blazing_quartz"
+    },
+    {
+      "item": "malum:soulstone"
+    },
+    {
+      "item": "malum:hallowed_gold_ingot"
+    },
+    {
+      "item": "malum:hallowed_gold_ingot"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/melee"
+  },
+  "result": {
+    "name": "bettercompat:spirit_reaper",
+    "level": 1
+  },
+  "max_level": 1
+}

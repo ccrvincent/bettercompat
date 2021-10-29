@@ -30,6 +30,10 @@
   "fluid.bettercompat.molten_fluix": "Molten Fluix",
       //iceandfire
   "fluid.bettercompat.molten_sapphire": "Molten Sapphire",
+      //malum
+  "fluid.bettercompat.molten_soul_stained_steel": "Molten Soul Stained Steel",
+      //undead expansion
+  "fluid.bettercompat.shadowsteel": "Shadowsteel",
 
       /*     Items    */
 
@@ -62,6 +66,10 @@
   "item.bettercompat.fluix_bucket": "Molten Fluix Bucket",
       //iceandfire
   "item.bettercompat.sapphire_bucket": "Molten Sapphire Bucket",
+      //malum
+  "item.bettercompat.soul_stained_steel_bucket": "Molten Soul Stained Steel Bucket",
+      //undead expansion
+  "item.bettercompat.shadowsteel_bucket": "Molten Shadowsteel Bucket",
 
       /*     Materials    */
 
@@ -107,6 +115,10 @@
       //projecte
   "material.bettercompat.dark_matter": "Dark Matter",
   "material.bettercompat.red_matter": "Red Matter",
+      //malum
+  "material.bettercompat.soul_stained_steel": "Soul Stained Steel",
+      //undead expansion
+  "material.bettercompat.shadowsteel": "Shadowsteel",
 
     /*       Effects       */
 
@@ -197,5 +209,14 @@
   "modifier.bettercompat.bloodied.description": "Increases damage as the players health lowers, but only below half health",
   "modifier.bettercompat.sentient": "Sentient",
   "modifier.bettercompat.sentient.flavor": "Soul Sucking!",
-  "modifier.bettercompat.sentient.description": "Suck up the soul of a monster when you have a soul gem in your inventory"
+  "modifier.bettercompat.sentient.description": "Suck up the soul of a monster when you have a soul gem in your inventory",
+  "modifier.bettercompat.spirit_reaper": "Spirit Reaper",
+  "modifier.bettercompat.spirit_reaper.flavor": "Spiritual!",
+  "modifier.bettercompat.spirit_reaper.description": "Reaps the spirits from the mob you have killed",
+  "modifier.bettercompat.voodoo": "Voodoo",
+  "modifier.bettercompat.voodoo.flavor": "Bewitched!",
+  "modifier.bettercompat.voodoo.description": "Damage your enemies with the power of the voodoo",
+  "modifier.bettercompat.shadow_rage": "Shadow Rage",
+  "modifier.bettercompat.shadow_rage.flavor": "Gloomy!",
+  "modifier.bettercompat.shadow_rage.description": "Puts you into shadow form after killing an enemy"
 }

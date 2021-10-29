@@ -88,6 +88,15 @@ public class CompatBlocks {
             .register("molten_fluix_block", () -> new FlowingFluidBlock(CompatFluids.FLUIX,
                     Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
     
-    public static final RegistryObject<Block> BLOCK = BLOCKS.register("block", () -> new Block(Block.Properties.create(Material.LAVA)));
+    
+    //malum
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_SOUL_STAINED_STEEL = BLOCKS
+            .register("soul_stained_lava_block", () -> new FlowingFluidBlock(CompatFluids.SOUL_STAINED_STEEL,
+                    Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
+    
+    //undead expansion
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_SHADOWSTEEL = BLOCKS
+            .register("molten_shadowsteel_block", () -> new FlowingFluidBlock(CompatFluids.SHADOWSTEEL,
+                    Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
     
 }

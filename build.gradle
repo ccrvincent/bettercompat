@@ -103,10 +103,11 @@ dependencies {
     // optional dependencies
     implementation fg.deobf ("vazkii.botania:Botania:${minecraft_version}-${botania_version}")
     implementation fg.deobf ("curse.maven:iceandfire-264231:${iceandfire_version}")
-    implementation fg.deobf("appeng:appliedenergistics2:${ae2_version}")
+    implementation fg.deobf ("appeng:appliedenergistics2:${ae2_version}")
     implementation fg.deobf ("curse.maven:mythicbotany-400058:${mythicbotany_version}")
-    implementation fg.deobf("curse.maven:bloodmagic-224791:${bloodmagic_version}")
-    implementation fg.deobf("curse.maven:veinmining-431611:${veinmining_version}")
+    implementation fg.deobf ("curse.maven:bloodmagic-224791:${bloodmagic_version}")
+    implementation fg.deobf ("curse.maven:malum-484064:${malum_version}")
+    implementation fg.deobf ("curse.maven:undead-507884:${undead_version}")
 
     // optional libs
     implementation fg.deobf ("curse.maven:citadel-331936:${citadel_version}")

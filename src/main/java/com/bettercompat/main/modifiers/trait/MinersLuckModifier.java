@@ -1,5 +1,7 @@
 package com.bettercompat.main.modifiers.trait;
 
+import com.github.alexthe666.iceandfire.item.IafItemRegistry;
+
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -20,14 +22,14 @@ public class MinersLuckModifier extends Modifier {
 		PlayerEntity player = context.getPlayer();
 		boolean isEffective = context.isEffective();
 		if (isEffective) {
-			dropItem(player.world, player.getPosX(), player.getPosY(), player.getPosZ(), level * 0.01f);
+			dropItem(player.world, player.getPosX(), player.getPosY(), player.getPosZ(), level * 0.001f);
 		}
 	}
 
 	protected void dropItem(World world, double x, double y, double z, float chance) {
 		ItemEntity item;
 		if (!world.isRemote && RANDOM.nextFloat() < chance) {
-			int rand = RANDOM.nextInt(3);
+			int rand = RANDOM.nextInt(4);
 			switch (rand) {
 			case 0:
 				item = new ItemEntity(world, x, y, z, new ItemStack(Items.DIAMOND));
@@ -38,7 +40,11 @@ public class MinersLuckModifier extends Modifier {
 				world.addEntity(item);
 				break;
 			case 2:
-				item = new ItemEntity(world, x, y, z, new ItemStack(Items.GOLD_INGOT));
+				item = new ItemEntity(world, x, y, z, new ItemStack(IafItemRegistry.SAPPHIRE_GEM));
+				world.addEntity(item);
+				break;
+			case 3:
+				item = new ItemEntity(world, x, y, z, new ItemStack(IafItemRegistry.AMYTHEST_GEM));
 				world.addEntity(item);
 				break;
 			}

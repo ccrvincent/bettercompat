@@ -122,6 +122,18 @@ public class CompatFluids {
     public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_FLUIX = FLUIDS.register("flowing_molten_fluix",
             () -> new ForgeFlowingFluid.Flowing(makeMoltenFluixProperties()));
     
+    	//malum
+    public static final RegistryObject<ForgeFlowingFluid.Source> SOUL_STAINED_STEEL = FLUIDS.register("molten_soul_stained_steel",
+            () -> new ForgeFlowingFluid.Source(makeMoltenSoulStainedSteelProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_SOUL_STAINED_STEEL = FLUIDS.register("flowing_molten_soul_stained_steel",
+            () -> new ForgeFlowingFluid.Flowing(makeMoltenSoulStainedSteelProperties()));
+    
+    	//undead expansion
+    public static final RegistryObject<ForgeFlowingFluid.Source> SHADOWSTEEL = FLUIDS.register("molten_shadowsteel",
+            () -> new ForgeFlowingFluid.Source(makeMoltenShadowsteelProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_SHADOWSTEEL = FLUIDS.register("flowing_molten_shadowsteel",
+            () -> new ForgeFlowingFluid.Flowing(makeMoltenShadowsteelProperties()));
+    
     //molten material properties
     	//better end
     private static ForgeFlowingFluid.Properties makeMoltenThallasiumProperties() {
@@ -237,6 +249,7 @@ public class CompatFluids {
                 .bucket(CompatItems.TERRASTEEL_BUCKET).block(CompatBlocks.MOLTEN_TERRASTEEL).explosionResistance(1000F).tickRate(9);
     }
     
+    	//mythic botany
     private static ForgeFlowingFluid.Properties makeMoltenAlfsteelProperties() {
         return new ForgeFlowingFluid.Properties(ALFSTEEL, flowing_ALFSTEEL,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFFFC54F)
@@ -244,7 +257,7 @@ public class CompatFluids {
                 .bucket(CompatItems.ALFSTEEL_BUCKET).block(CompatBlocks.MOLTEN_ALFSTEEL).explosionResistance(1000F).tickRate(9);
     }
     
-    //ae2
+    	//ae2
     private static ForgeFlowingFluid.Properties makeMoltenCertusQuartzProperties() {
         return new ForgeFlowingFluid.Properties(CERTUS_QUARTZ, flowing_CERTUS_QUARTZ,
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFDFEDFB)
@@ -258,4 +271,19 @@ public class CompatFluids {
                         .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(CompatItems.FLUIX_BUCKET).block(CompatBlocks.MOLTEN_FLUIX).explosionResistance(1000F).tickRate(9);
     }
+    
+    	//malum
+    private static ForgeFlowingFluid.Properties makeMoltenSoulStainedSteelProperties() {
+        return new ForgeFlowingFluid.Properties(SOUL_STAINED_STEEL, flowing_SOUL_STAINED_STEEL,
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF5F3672)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
+                .bucket(CompatItems.SOUL_STAINED_STEEL_BUCKET).block(CompatBlocks.MOLTEN_SOUL_STAINED_STEEL).explosionResistance(1000F).tickRate(9);
+    }
+        
+    private static ForgeFlowingFluid.Properties makeMoltenShadowsteelProperties() {
+        return new ForgeFlowingFluid.Properties(SHADOWSTEEL, flowing_SHADOWSTEEL,
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF685582)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
+                .bucket(CompatItems.SHADOWSTEEL_BUCKET).block(CompatBlocks.MOLTEN_SHADOWSTEEL).explosionResistance(1000F).tickRate(9);
+    }       
 }
