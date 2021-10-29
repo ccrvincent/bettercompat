@@ -17,6 +17,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipe;
 import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.loot.LootContext;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.Direction;
 import net.minecraft.world.World;
@@ -48,26 +49,15 @@ public class SuperheatedModifier extends Modifier {
 	}
 	
 	@Override
-	public float getEntityDamage(IModifierToolStack tool, int level, ToolAttackContext context, float baseDamage, float damage) {
-		LivingEntity attacker = context.getAttacker();
-		LivingEntity target = context.getLivingTarget();
-		if (attacker.world.isRemote && attacker.canEquip(tool.getItem())) {
-			if (!target.isImmuneToFire()) {
-				return damage;
-			}
-			float toolDamage = tool.getDamage();
-			float bonus = toolDamage + (16f / 100f);
-			damage += bonus + level;
-		}
-		return damage;
-	}
-	
-	@Override
 	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		LivingEntity attacker = context.getAttacker();
 		LivingEntity target = context.getLivingTarget();
-		if (!target.isImmuneToFire()) {
-				target.attackEntityFrom(DamageSource.ON_FIRE, 5.0f);
+		if (attacker.canEquip(tool.getItem()))  {
+			if (!target.isImmuneToFire() && !target.isPotionActive(Effects.FIRE_RESISTANCE)) {
+				target.setFire(level * 3);
+			}
+			float bonus = level * 4;
+			target.attackEntityFrom(DamageSource.MAGIC, bonus);
 		}
 		return 0;
 	}

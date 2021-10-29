@@ -43,5 +43,4 @@ public class ElectricModifier extends Modifier {
         }
 		return 0;
 	}
-
 }

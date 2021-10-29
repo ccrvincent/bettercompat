@@ -34,6 +34,11 @@ public class BlockInit {
             .register("molten_netheriteopal_block", () -> new FlowingFluidBlock(FluidInit.NETHERITEOPAL,
                     Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
     
+    //iceandfire
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_SAPPHIRE = BLOCKS
+            .register("molten_sapphire_block", () -> new FlowingFluidBlock(FluidInit.SAPPHIRE,
+                    Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
+    
     //endreborn
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_ENDORIUM = BLOCKS
             .register("molten_endorium_block", () -> new FlowingFluidBlock(FluidInit.ENDORIUM,

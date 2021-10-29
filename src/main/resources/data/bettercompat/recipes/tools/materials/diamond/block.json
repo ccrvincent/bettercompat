@@ -14,7 +14,7 @@
   },
   "value": 9,
   "needed": 1,
-  "material": "natureminerals:diamond",
+  "material": "bettercompat:diamond",
   "leftover": {
     "tag": "forge:gems/diamond"
   }

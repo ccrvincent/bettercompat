@@ -36,6 +36,11 @@ public class ItemInit {
 			() -> new BucketItem(FluidInit.NETHERITEOPAL,
 					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("oresabovediamonds") ? ItemGroup.MISC : null)));
 	
+	//iceandfire
+	public static final RegistryObject<Item> SAPPHIRE_BUCKET = ITEMS.register("sapphire_bucket", 
+			() -> new BucketItem(FluidInit.SAPPHIRE,
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("iceandfire") ? ItemGroup.MISC : null)));
+	
 	//endreborn
 	public static final RegistryObject<Item> ENDORIUM_BUCKET = ITEMS.register("endorium_bucket", 
 			() -> new BucketItem(FluidInit.ENDORIUM,

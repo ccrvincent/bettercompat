@@ -6,7 +6,7 @@
         "type": "tconstruct:config"
       },
       {
-        "modid": "oresabovediamonds",
+        "modid": "iceandfire",
         "type": "forge:mod_loaded"
       }
     ],
@@ -14,10 +14,10 @@
   },
   "type": "tconstruct:ore_melting",
   "ingredient": {
-  	"item": "oresabovediamonds:amethyst_ore",
+  	"tag": "forge:ores/sapphire",
   },
   "result": {
-    "fluid": "bettercompat:molten_amethyst",
+    "fluid": "bettercompat:molten_sapphire",
     "amount": 144
   },
   "temperature": 1000,

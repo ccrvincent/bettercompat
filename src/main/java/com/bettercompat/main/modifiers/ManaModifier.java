@@ -6,10 +6,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
-import vazkii.botania.api.mana.IManaUsingItem;
 import vazkii.botania.api.mana.ManaItemHandler;
 
-public class ManaModifier extends Modifier implements IManaUsingItem {
+public class ManaModifier extends Modifier {
 	
     private int useMana = 100;
 	
@@ -24,10 +23,4 @@ public class ManaModifier extends Modifier implements IManaUsingItem {
 			stack.setDamage(stack.getDamage() - 1);
 		}
 	}
-
-	@Override
-	public boolean usesMana(ItemStack stack) {
-		return true;
-	}
-
 }

@@ -53,6 +53,12 @@ public class FluidInit {
     public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_NETHERITEOPAL = FLUIDS.register("flowing_molten_netheriteopal",
             () -> new ForgeFlowingFluid.Flowing(makeMoltenNetheriteOpalProperties()));
     
+    	//iceandfire
+    public static final RegistryObject<ForgeFlowingFluid.Source> SAPPHIRE = FLUIDS.register("molten_sapphire",
+            () -> new ForgeFlowingFluid.Source(makeMoltenSapphireProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_SAPPHIRE = FLUIDS.register("flowing_molten_sapphire",
+            () -> new ForgeFlowingFluid.Flowing(makeMoltenSapphireProperties()));
+    
     	//endreborn
     public static final RegistryObject<ForgeFlowingFluid.Source> ENDORIUM = FLUIDS.register("molten_endorium",
             () -> new ForgeFlowingFluid.Source(makeMoltenEndoriumProperties()));
@@ -77,7 +83,7 @@ public class FluidInit {
     public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_ENDERIUM = FLUIDS.register("flowing_molten_enderium", 
     		() -> new ForgeFlowingFluid.Flowing(makeEnderiumProperties()));
     	
-    //vulcanite
+    	//vulcanite
     public static final RegistryObject<ForgeFlowingFluid.Source> VULCANITE = FLUIDS.register("molten_vulcanite", 
     		() -> new ForgeFlowingFluid.Source(makeVulcaniteProperties()));
     public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_VULCANITE = FLUIDS.register("flowing_molten_vulcanite", 
@@ -105,7 +111,7 @@ public class FluidInit {
     public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_ALFSTEEL = FLUIDS.register("flowing_molten_alfsteel",
             () -> new ForgeFlowingFluid.Flowing(makeMoltenAlfsteelProperties()));
     
-    //ae2
+    	//ae2
     public static final RegistryObject<ForgeFlowingFluid.Source> CERTUS_QUARTZ = FLUIDS.register("molten_certus_quartz",
             () -> new ForgeFlowingFluid.Source(makeMoltenCertusQuartzProperties()));
     public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_CERTUS_QUARTZ = FLUIDS.register("flowing_molten_certus_quartz",
@@ -159,6 +165,14 @@ public class FluidInit {
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF000017)
                         .luminosity(15).density(3000).viscosity(6000).temperature(1500).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(ItemInit.NETHERITEOPAL_BUCKET).block(BlockInit.MOLTEN_NETHERITEOPAL).explosionResistance(1000F).tickRate(9);
+    }
+    
+    	//iceandfire
+    private static ForgeFlowingFluid.Properties makeMoltenSapphireProperties() {
+        return new ForgeFlowingFluid.Properties(SAPPHIRE, flowing_SAPPHIRE,
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF0B2476)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
+                .bucket(ItemInit.SAPPHIRE_BUCKET).block(BlockInit.MOLTEN_SAPPHIRE).explosionResistance(1000F).tickRate(9);
     }
     
     	//endreborn

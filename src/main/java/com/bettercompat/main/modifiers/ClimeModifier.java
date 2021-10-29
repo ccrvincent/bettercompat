@@ -1,9 +1,10 @@
 package com.bettercompat.main.modifiers;
 
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.monster.StrayEntity;
+import net.minecraft.entity.passive.PolarBearEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed;
@@ -22,15 +23,15 @@ public class ClimeModifier extends Modifier {
 		LivingEntity target = context.getLivingTarget();
 		BlockPos pos = attacker.getPosition();
 		float temperature = attacker.world.getBiome(pos).getTemperature(pos);
-		if(attacker.world.isRemote && attacker.canEquip(tool.getItem())) {
-			if (temperature >= 1.5f) {
-				target.attackEntityFrom(DamageSource.ON_FIRE, 5f);
+		if(attacker.canEquip(tool.getItem())) {
+			if (temperature >= 1.5f && !target.isImmuneToFire()) {
+				target.setFire(level * 3);
 			}
-			if (temperature <= 0.5f) {
-				target.addPotionEffect(new EffectInstance(Effects.SLOWNESS));
-				target.addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE));
+			if (temperature <= 0.5f && !(target instanceof PolarBearEntity) && !(target instanceof StrayEntity)) {
+				target.addPotionEffect(new EffectInstance(Effects.SLOWNESS, level * 50, level, false, false));
+				target.addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, level * 50, level, false, false));
 			}
-			target.addPotionEffect(new EffectInstance(Effects.WEAKNESS));
+			target.addPotionEffect(new EffectInstance(Effects.WEAKNESS, level * 50, level, false, false));
 		}
 		return 0;
 	}
@@ -40,7 +41,7 @@ public class ClimeModifier extends Modifier {
 		if (isEffective) {
 			BlockPos pos = event.getPos();
 			float temperature = event.getPlayer().world.getBiome(pos).getTemperature(pos);
-			float b = temperature * level / 10;
+			float b = temperature * level / 5;
 			event.setNewSpeed(event.getNewSpeed() * (0.5f + b));
 		}
 	}

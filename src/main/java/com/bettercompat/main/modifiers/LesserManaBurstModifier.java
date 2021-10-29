@@ -14,14 +14,14 @@ import vazkii.botania.common.entity.EntityManaBurst;
 import vazkii.botania.common.item.ModItems;
 import vazkii.botania.common.item.equipment.tool.terrasteel.ItemTerraSword;
 
-public class LesserManaBurstModifier extends Modifier implements IManaUsingItem {
+public class LesserManaBurstModifier extends Modifier {
 
 	public LesserManaBurstModifier() {
 		super(0x58ff0b);
 	}
 	
 	@Override
-	public float beforeEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damage, float baseKnockback, float knockback) {
+	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		PlayerEntity player = context.getPlayerAttacker();
 		LivingEntity target = context.getLivingTarget();
         if (!player.getHeldItemMainhand().isEmpty() && player.getCooledAttackStrength(0.0F) == 1.0F) {
@@ -32,11 +32,6 @@ public class LesserManaBurstModifier extends Modifier implements IManaUsingItem 
             });
             player.world.playSound(null, player.getPosX(), player.getPosY(), player.getPosZ(), ModSounds.terraBlade, SoundCategory.PLAYERS, 0.4F, 1.4F);
         }
-        return knockback;
-	}
-
-	@Override
-	public boolean usesMana(ItemStack stack) {
-		return true;
+        return 0;
 	}
 }

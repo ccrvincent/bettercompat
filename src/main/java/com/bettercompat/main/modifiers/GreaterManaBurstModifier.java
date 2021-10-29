@@ -14,14 +14,14 @@ import vazkii.botania.api.mana.IManaUsingItem;
 import vazkii.botania.common.core.handler.ModSounds;
 import vazkii.botania.common.entity.EntityManaBurst;
 
-public class GreaterManaBurstModifier extends Modifier implements IManaUsingItem {
+public class GreaterManaBurstModifier extends Modifier {
 
 	public GreaterManaBurstModifier() {
 		super(0xffc54f);
 	}
 	
 	@Override
-	public float beforeEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damage, float baseKnockback, float knockback) {
+	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		PlayerEntity player = context.getPlayerAttacker();
 		LivingEntity target = context.getLivingTarget();
         if (!player.getHeldItemMainhand().isEmpty() && player.getCooledAttackStrength(0.0F) == 1.0F) {
@@ -32,14 +32,6 @@ public class GreaterManaBurstModifier extends Modifier implements IManaUsingItem
             });
             player.world.playSound(null, player.getPosX(), player.getPosY(), player.getPosZ(), ModSounds.terraBlade, SoundCategory.PLAYERS, 0.4F, 1.4F);
         }
-        return knockback;
+        return 0;
 	}
-
-	@Override
-	public boolean usesMana(ItemStack stack) {
-		return true;
-	}
-	
-	
-
 }

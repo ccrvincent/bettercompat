@@ -2,6 +2,7 @@ package com.bettercompat.main.modifiers;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.Direction;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed;
@@ -17,15 +18,16 @@ public class EnderCrushingModifier extends Modifier {
 	}
 	
 	@Override
-	public float getEntityDamage(IModifierToolStack tool, int level, ToolAttackContext context, float baseDamage, float damage) {
+	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
 		LivingEntity attacker = context.getAttacker();
+		LivingEntity target = context.getLivingTarget();
 		boolean isInEnd = attacker.getEntityWorld().getDimensionKey().equals(World.THE_END);
-		if (isInEnd) {
+		if (isInEnd && attacker.canEquip(tool.getItem()))  {
 			float attackDmg = tool.getModifier(ToolStats.ATTACK_DAMAGE);
-			float damageBoost = attackDmg * (level / 10);
-			return damage + damageBoost;
+			float damageBoost = attackDmg * (level / 5);
+			target.attackEntityFrom(DamageSource.MAGIC, damageBoost);
 		}
-		return damage;
+		return 0;
 	}
 	
 	@Override

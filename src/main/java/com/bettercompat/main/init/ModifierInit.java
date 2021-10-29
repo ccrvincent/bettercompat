@@ -1,7 +1,10 @@
 package com.bettercompat.main.init;
 
 import com.bettercompat.main.BetterCompat;
+import com.bettercompat.main.modifiers.AntiArmorModifier;
 import com.bettercompat.main.modifiers.BarterableModifier;
+import com.bettercompat.main.modifiers.BloodiedModifier;
+import com.bettercompat.main.modifiers.BoneShardModifier;
 import com.bettercompat.main.modifiers.ClimeModifier;
 import com.bettercompat.main.modifiers.CrystalPowerModifier;
 import com.bettercompat.main.modifiers.CrystallizedModifier;
@@ -19,6 +22,7 @@ import com.bettercompat.main.modifiers.InclinedModifier;
 import com.bettercompat.main.modifiers.LavaEfficiencyModifier;
 import com.bettercompat.main.modifiers.LesserManaBurstModifier;
 import com.bettercompat.main.modifiers.ManaModifier;
+import com.bettercompat.main.modifiers.MinersLuckModifier;
 import com.bettercompat.main.modifiers.MoonlightModifier;
 import com.bettercompat.main.modifiers.ObsidianifiedModifier;
 import com.bettercompat.main.modifiers.QuartzInfusedModifier;
@@ -55,5 +59,9 @@ public class ModifierInit {
 	public static final RegistryObject<Modifier> RISING = MODIFIERS.register("rising", RisingModifier::new);
 	public static final RegistryObject<Modifier> LESSER_MANA_BURST = MODIFIERS.register("lesser_mana_burst", LesserManaBurstModifier::new);
 	public static final RegistryObject<Modifier> GREATER_MANA_BURST = MODIFIERS.register("greater_mana_burst", GreaterManaBurstModifier::new);
+	public static final RegistryObject<Modifier> BONE_SHARD = MODIFIERS.register("bone_shard", BoneShardModifier::new);
+	public static final RegistryObject<Modifier> MINERS_LUCK = MODIFIERS.register("miners_luck", MinersLuckModifier::new);
+	public static final RegistryObject<Modifier> ANTI_ARMOR = MODIFIERS.register("anti_armor", AntiArmorModifier::new);
+	public static final RegistryObject<Modifier> BLOODIED = MODIFIERS.register("bloodied", BloodiedModifier::new);
 
 }

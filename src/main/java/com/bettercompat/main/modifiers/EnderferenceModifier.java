@@ -14,7 +14,7 @@ import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
 
 public class EnderferenceModifier extends Modifier {
 	
-	public static TinkerEffect Enderference = new TinkerEffect(EffectType.NEUTRAL, 0x105a4b, true);
+	public static TinkerEffect Enderference = new TinkerEffect(EffectType.NEUTRAL, false);
 
 	public EnderferenceModifier() {
 		super(0x105a4b);
@@ -26,7 +26,7 @@ public class EnderferenceModifier extends Modifier {
 	public float beforeEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damage, float baseKnockback, float knockback) {
 		LivingEntity target = context.getLivingTarget();
 		if(target instanceof EndermanEntity) {
-			EffectInstance effect = new EffectInstance(Enderference, 100, 1, false, true);
+			EffectInstance effect = new EffectInstance(Enderference, 100, 1, false, false);
 			target.addPotionEffect(effect);
 		}
 		return knockback;

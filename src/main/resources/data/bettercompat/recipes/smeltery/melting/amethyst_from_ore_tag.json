@@ -6,7 +6,7 @@
         "type": "tconstruct:config"
       },
       {
-        "modid": "oresabovediamonds",
+        "modid": "iceandfire",
         "type": "forge:mod_loaded"
       }
     ],
@@ -14,7 +14,7 @@
   },
   "type": "tconstruct:ore_melting",
   "ingredient": {
-  	"item": "oresabovediamonds:amethyst_ore",
+  	"tag": "forge:ores/amethyst",
   },
   "result": {
     "fluid": "bettercompat:molten_amethyst",
