@@ -8,6 +8,10 @@
       {
         "modid": "oresabovediamonds",
         "type": "forge:mod_loaded"
+      },
+      {
+        "modid": "iceandfire",
+        "type": "forge:mod_loaded"
       }
     ],
     "type": "forge:or"

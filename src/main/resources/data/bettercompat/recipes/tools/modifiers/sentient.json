@@ -1,0 +1,34 @@
+{
+  "type": "tconstruct:modifier",
+  "conditions": [
+    {
+      "modid": "bloodmagic",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "bloodmagic:basemonstersoul"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "bloodmagic:weakbloodorb"
+    },
+    {
+      "item": "bloodmagic:weakbloodorb"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/melee"
+  },
+  "result": {
+    "name": "bettercompat:sentient",
+    "level": 1
+  },
+  "max_level": 1
+}

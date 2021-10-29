@@ -194,5 +194,8 @@
   "modifier.bettercompat.anti_armor.description": "Deals the damage of the targets armor rating plus a bonus",
   "modifier.bettercompat.bloodied": "Bloodied",
   "modifier.bettercompat.bloodied.flavor": "Gory!",
-  "modifier.bettercompat.bloodied.description": "Increases damage as the players health lowers, but only below half health"
+  "modifier.bettercompat.bloodied.description": "Increases damage as the players health lowers, but only below half health",
+  "modifier.bettercompat.sentient": "Sentient",
+  "modifier.bettercompat.sentient.flavor": "Soul Sucking!",
+  "modifier.bettercompat.sentient.description": "Suck up the soul of a monster when you have a soul gem in your inventory"
 }

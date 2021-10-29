@@ -6,24 +6,21 @@
         "type": "tconstruct:config"
       },
       {
-        "modid": "oresabovediamonds",
+        "modid": "iceandfire",
         "type": "forge:mod_loaded"
       }
     ],
     "type": "forge:or"
   },
-  "type": "tconstruct:casting_table",
-  "cast": {
-    "tag": "tconstruct:casts/single_use/gem"
-  },
+  "type": "tconstruct:casting_basin",
   "fluid": {
     "name": "bettercompat:molten_amethyst",
-    "amount": 144
+    "amount": 1296
   },
   "result": {
-    "tag": "forge:gems/amethyst",
+    "tag": "forge:storage_blocks/amethyst",
   },
-  "cooling_time": 85,
+  "cooling_time": 200,
   "conditions": [
       {
           "type": "forge:mod_loaded",
