@@ -1,6 +1,7 @@
 package com.bettercompat.main.modifiers.trait;
 
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.util.DamageSource;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IModifierToolStack;
@@ -18,6 +19,7 @@ public class AntiArmorModifier extends Modifier {
 		if (target.getTotalArmorValue() < 0) {
 			return damage;
 		}
-		return damage + boost;
+		target.attackEntityFrom(DamageSource.GENERIC.setDamageBypassesArmor(), damage + boost);
+		return 0;
 	}
 }

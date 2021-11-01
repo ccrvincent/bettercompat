@@ -26,6 +26,9 @@
   "tools": {
     "tag": "tconstruct:modifiable/melee"
   },
+  "slots": {
+    "upgrades": 1
+  },
   "result": {
     "name": "bettercompat:spirit_reaper",
     "level": 1

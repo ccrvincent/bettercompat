@@ -23,6 +23,14 @@ public class CompatBlocks {
             .register("molten_aeternium_block", () -> new FlowingFluidBlock(CompatFluids.AETERNIUM,
                     Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
     
+    //better nether
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_CINCINNASITE = BLOCKS
+            .register("molten_cincinnasite_block", () -> new FlowingFluidBlock(CompatFluids.CINCINNASITE,
+                    Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_RUBY = BLOCKS
+            .register("molten_ruby_block", () -> new FlowingFluidBlock(CompatFluids.RUBY,
+                    Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
+    
     //ores above diamonds
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_AMETHYST = BLOCKS
             .register("molten_amethyst_block", () -> new FlowingFluidBlock(CompatFluids.AMETHYST,

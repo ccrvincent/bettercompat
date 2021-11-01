@@ -25,6 +25,14 @@ public class CompatItems {
 			() -> new BucketItem(CompatFluids.AETERNIUM,
 					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("betterendforge") ? ItemGroup.MISC : null)));
 	
+	//better nether
+	public static final RegistryObject<Item> CINCINNASITE_BUCKET = ITEMS.register("cincinnasite_bucket", 
+			() -> new BucketItem(CompatFluids.CINCINNASITE,
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("betternether") ? ItemGroup.MISC : null)));
+	public static final RegistryObject<Item> RUBY_BUCKET = ITEMS.register("ruby_bucket", 
+			() -> new BucketItem(CompatFluids.RUBY,
+					new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ModList.get().isLoaded("betternether") ? ItemGroup.MISC : null)));
+	
 	//ores above diamonds
 	public static final RegistryObject<Item> AMETHYST_BUCKET = ITEMS.register("amethyst_bucket", 
 			() -> new BucketItem(CompatFluids.AMETHYST,

@@ -33,13 +33,16 @@
       //malum
   "fluid.bettercompat.molten_soul_stained_steel": "Molten Soul Stained Steel",
       //undead expansion
-  "fluid.bettercompat.shadowsteel": "Shadowsteel",
+  "fluid.bettercompat.molten_shadowsteel": "Molten Shadowsteel",
+      //better nether
+  "fluid.bettercompat.molten_cincinnasite": "Molten Cincinnasite",
+  "fluid.bettercompat.molten_ruby": "Molten Ruby",
 
       /*     Items    */
 
       //betterend
   "item.bettercompat.aeternium_bucket": "Molten Aeternium Bucket",
-  "item.bettercompat.terminite_bucket": "Molten Termintie Bucket",
+  "item.bettercompat.terminite_bucket": "Molten Terminite Bucket",
   "item.bettercompat.thallasium_bucket": "Molten Thallasium Bucket",
       //oresabovediamonds
   "item.bettercompat.amethyst_bucket": "Molten Amethyst Bucket",
@@ -70,6 +73,9 @@
   "item.bettercompat.soul_stained_steel_bucket": "Molten Soul Stained Steel Bucket",
       //undead expansion
   "item.bettercompat.shadowsteel_bucket": "Molten Shadowsteel Bucket",
+      //better nether
+  "item.bettercompat.cincinnasite_bucket": "Molten Cincinnasite Bucket",
+  "item.bettercompat.ruby_bucket": "Molten Ruby Bucket",
 
       /*     Materials    */
 
@@ -119,6 +125,9 @@
   "material.bettercompat.soul_stained_steel": "Soul Stained Steel",
       //undead expansion
   "material.bettercompat.shadowsteel": "Shadowsteel",
+      //better nether
+  "material.bettercompat.cincinnasite": "Cincinnasite",
+  "material.bettercompat.ruby": "Ruby",
 
     /*       Effects       */
 
@@ -176,7 +185,7 @@
   "modifier.bettercompat.holy.description": "Let the undead fall to the might of your blade",
   "modifier.bettercompat.mana": "Mana",
   "modifier.bettercompat.mana.flavor": "Magical!",
-  "modifier.bettercompat.mana.description": "Uses mana to repair your tool over time",
+  "modifier.bettercompat.mana.description": "Uses mana to repair your tool over time, when having a Mana Tablet in inventory",
   "modifier.bettercompat.clime": "Clime",
   "modifier.bettercompat.clime.flavor": "Climate Based!",
   "modifier.bettercompat.clime.description": "The lower the temperature, the weaker the boost",
@@ -218,5 +227,19 @@
   "modifier.bettercompat.voodoo.description": "Damage your enemies with the power of the voodoo",
   "modifier.bettercompat.shadow_rage": "Shadow Rage",
   "modifier.bettercompat.shadow_rage.flavor": "Gloomy!",
-  "modifier.bettercompat.shadow_rage.description": "Puts you into shadow form after killing an enemy"
+  "modifier.bettercompat.shadow_rage.description": "Puts you into shadow form after killing an enemy",
+  "modifier.bettercompat.blood_leeching": "Blood Leeching",
+  "modifier.bettercompat.blood_leeching.flavor": "Bloody!",
+  "modifier.bettercompat.blood_leeching.description": "Deals bonus damage depending on the amount of health already lost by the target",
+  "modifier.bettercompat.lunge": "Lunge",
+  "modifier.bettercompat.lunge.flavor": "Thrusty!",
+  "modifier.bettercompat.lunge.description": "Adds a lunge feature to your tool, similar to the TiCon 2 Longsword",
+  "recipe.bettercompat.modifier.lunge_level_2": "Requires level 1 of Lunge to be applied",
+  "recipe.bettercompat.modifier.lunge_level_3": "Requires level 2 of Lunge to be applied",
+  "modifier.bettercompat.reflect": "Reflect",
+  "modifier.bettercompat.reflect.flavor": "Mirrorlike!",
+  "modifier.bettercompat.reflect.description": "When missing an attack, has a chance to reflect the damage you would have dealt onto yourself",
+  "modifier.bettercompat.prospect": "Prospect",
+  "modifier.bettercompat.prospect.flavor": "Miney!",
+  "modifier.bettercompat.prospect.description": "When mining, player will randomly receive haste effect for a short time"
 }

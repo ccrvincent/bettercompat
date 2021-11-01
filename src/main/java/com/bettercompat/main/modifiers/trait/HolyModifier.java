@@ -19,8 +19,8 @@ public class HolyModifier extends Modifier {
 	  
 	@Override
 	public int afterEntityHit(IModifierToolStack tool, int level, ToolAttackContext context, float damageDealt) {
-		LivingEntity livingTarget = context.getLivingTarget();
-		if (livingTarget.getCreatureAttribute() != type) {
+		LivingEntity target = context.getLivingTarget();
+		if (target.getCreatureAttribute() != type) {
 			damageDealt += level * 2.5f;
 	    }
 		return 0;

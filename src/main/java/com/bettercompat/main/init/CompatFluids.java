@@ -37,6 +37,17 @@ public class CompatFluids {
     public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_AETERNIUM = FLUIDS.register("flowing_molten_aeternium",
             () -> new ForgeFlowingFluid.Flowing(makeMoltenAeterniumProperties()));
     
+    	//better nether
+    public static final RegistryObject<ForgeFlowingFluid.Source> CINCINNASITE = FLUIDS.register("molten_cincinnasite",
+            () -> new ForgeFlowingFluid.Source(makeMoltenCincinnasiteProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_CINCINNASITE = FLUIDS.register("flowing_molten_cincinnasite",
+            () -> new ForgeFlowingFluid.Flowing(makeMoltenCincinnasiteProperties()));
+    
+    public static final RegistryObject<ForgeFlowingFluid.Source> RUBY = FLUIDS.register("molten_ruby",
+            () -> new ForgeFlowingFluid.Source(makeMoltenRubyProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_RUBY = FLUIDS.register("flowing_molten_ruby",
+            () -> new ForgeFlowingFluid.Flowing(makeMoltenRubyProperties()));
+    
     	//ores above diamonds
     public static final RegistryObject<ForgeFlowingFluid.Source> AMETHYST = FLUIDS.register("molten_amethyst",
             () -> new ForgeFlowingFluid.Source(makeMoltenAmethystProperties()));
@@ -155,6 +166,21 @@ public class CompatFluids {
                 FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF6B807F)
                         .luminosity(15).density(3000).viscosity(6000).temperature(1500).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
                 .bucket(CompatItems.AETERNIUM_BUCKET).block(CompatBlocks.MOLTEN_AETERNIUM).explosionResistance(1000F).tickRate(9);
+    }
+    
+    	//better nether
+    private static ForgeFlowingFluid.Properties makeMoltenCincinnasiteProperties() {
+        return new ForgeFlowingFluid.Properties(CINCINNASITE, flowing_CINCINNASITE,
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFFCA816)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
+                .bucket(CompatItems.CINCINNASITE_BUCKET).block(CompatBlocks.MOLTEN_CINCINNASITE).explosionResistance(1000F).tickRate(9);
+    }
+    
+    private static ForgeFlowingFluid.Properties makeMoltenRubyProperties() {
+        return new ForgeFlowingFluid.Properties(RUBY, flowing_RUBY,
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFF930015)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
+                .bucket(CompatItems.RUBY_BUCKET).block(CompatBlocks.MOLTEN_RUBY).explosionResistance(1000F).tickRate(9);
     }
     
     	//ores above diamonds

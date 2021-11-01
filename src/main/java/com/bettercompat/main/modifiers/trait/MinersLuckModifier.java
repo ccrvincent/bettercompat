@@ -6,6 +6,7 @@ import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.tools.context.ToolHarvestContext;
@@ -20,9 +21,10 @@ public class MinersLuckModifier extends Modifier {
 	@Override
 	public void afterBlockBreak(IModifierToolStack tool, int level, ToolHarvestContext context) {
 		PlayerEntity player = context.getPlayer();
+		BlockPos block = context.getPos();
 		boolean isEffective = context.isEffective();
 		if (isEffective) {
-			dropItem(player.world, player.getPosX(), player.getPosY(), player.getPosZ(), level * 0.001f);
+			dropItem(player.world, block.getX(), block.getY(), block.getZ(), level * 0.001f);
 		}
 	}
 
