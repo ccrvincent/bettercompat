@@ -6,7 +6,7 @@
         "type": "tconstruct:config"
       },
       {
-        "modid": "endreborn",
+        "modid": "forge:nuggets/endorium",
         "type": "forge:mod_loaded"
       }
     ],
@@ -21,11 +21,5 @@
     "amount": 16
   },
   "temperature": 1000,
-  "time": 25,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "time": 25
 }

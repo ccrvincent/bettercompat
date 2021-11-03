@@ -1,31 +1,21 @@
 {
-  "condition": {
-    "values": [
-      {
-        "prop": "force_integration_materials",
-        "type": "tconstruct:config"
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/amethyst",
+        "type": "forge:tag_empty"
       },
-      {
-        "modid": "betternether",
-        "type": "forge:mod_loaded"
-      }
-    ],
-    "type": "forge:or"
-  },
+      "type": "forge:not"
+    }
+  ],
   "type": "tconstruct:melting",
   "ingredient": {
-    "item": "betternether:nether_ruby_block"
+    "tag": "forge:storage_blocks/ruby"
   },
   "result": {
     "fluid": "bettercompat:molten_ruby",
     "amount": 1296
   },
   "temperature": 1000,
-  "time": 200,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "time": 200
 }

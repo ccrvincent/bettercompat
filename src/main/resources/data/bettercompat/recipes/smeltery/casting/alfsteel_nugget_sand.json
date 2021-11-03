@@ -18,14 +18,8 @@
   },
   "fluid": {
     "name": "bettercompat:molten_alfsteel",
-    "amount": 144
+    "amount": 16
   },
   "result": "mythicbotany:alfsteel_nugget",
-  "cooling_time": 29,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "cooling_time": 29
 }

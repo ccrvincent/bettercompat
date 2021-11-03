@@ -1,17 +1,13 @@
 {  
-  "condition": {
-    "values": [
-      {
-        "prop": "force_integration_materials",
-        "type": "tconstruct:config"
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:gems/amethyst",
+        "type": "forge:tag_empty"
       },
-      {
-        "modid": "oresabovediamonds",
-        "type": "forge:mod_loaded"
-      }
-    ],
-    "type": "forge:or"
-  },
+      "type": "forge:not"
+    }
+  ],
   "type": "tconstruct:casting_table",
   "cast": {
     "tag": "tconstruct:casts/single_use/gem"
@@ -21,13 +17,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:gems/amethyst",
+    "tag": "forge:gems/amethyst"
   },
-  "cooling_time": 85,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "cooling_time": 85
 }

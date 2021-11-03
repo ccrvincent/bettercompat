@@ -18,11 +18,5 @@
     "amount": 576
   },
   "result": "betternether:cincinnasite_forged",
-  "cooling_time": 200,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "cooling_time": 200
 }

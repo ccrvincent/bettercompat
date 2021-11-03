@@ -7,6 +7,6 @@
   "needed": 1,
   "material": "bettercompat:sapphire",
   "leftover": {
-    "item": "iceandfire:sapphire_gem"
+    "tag": "forge:gems/sapphire"
   }
 }

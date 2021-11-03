@@ -18,14 +18,8 @@
   },
   "fluid": {
     "name": "bettercompat:molten_elementium",
-    "amount": 144
+    "amount": 16
   },
   "result": "botania:elementium_nugget",
-  "cooling_time": 29,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "cooling_time": 29
 }

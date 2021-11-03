@@ -18,8 +18,12 @@ public class CompatFluids {
             "blocks/fluids/molten_metal_still");
     public static final ResourceLocation MOLTEN_FLOW = new ResourceLocation(BetterCompat.MODID,
             "blocks/fluids/molten_metal_flowing");
-
     
+    public static final RegistryObject<ForgeFlowingFluid.Source> AURINIUM = FLUIDS.register("molten_aurinium",
+            () -> new ForgeFlowingFluid.Source(makeMoltenAuriniumProperties()));
+    public static final RegistryObject<ForgeFlowingFluid.Flowing> flowing_AURINIUM = FLUIDS.register("flowing_molten_aurinium",
+            () -> new ForgeFlowingFluid.Flowing(makeMoltenAuriniumProperties()));
+
     //materials
     	//better end
     public static final RegistryObject<ForgeFlowingFluid.Source> THALLASIUM = FLUIDS.register("molten_thallasium",
@@ -146,6 +150,14 @@ public class CompatFluids {
             () -> new ForgeFlowingFluid.Flowing(makeMoltenShadowsteelProperties()));
     
     //molten material properties
+    	//ticbc
+    private static ForgeFlowingFluid.Properties makeMoltenAuriniumProperties() {
+        return new ForgeFlowingFluid.Properties(AURINIUM, flowing_AURINIUM,
+                FluidAttributes.builder(MOLTEN_STILL, MOLTEN_FLOW).overlay(MOLTEN_STILL).color(0xFFFFC5FF)
+                        .luminosity(15).density(3000).viscosity(6000).temperature(1000).sound(SoundEvents.ITEM_BUCKET_FILL_LAVA, SoundEvents.ITEM_BUCKET_EMPTY_LAVA))
+        		.bucket(CompatItems.AURINIUM_BUCKET).block(CompatBlocks.MOLTEN_AURINIUM).explosionResistance(1000F).tickRate(9);
+    }
+    
     	//better end
     private static ForgeFlowingFluid.Properties makeMoltenThallasiumProperties() {
         return new ForgeFlowingFluid.Properties(THALLASIUM, flowing_THALLASIUM,

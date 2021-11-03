@@ -18,11 +18,5 @@
     "amount": 1296
   },
   "result": "oresabovediamonds:black_opal_block",
-  "cooling_time": 200,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "cooling_time": 200
 }

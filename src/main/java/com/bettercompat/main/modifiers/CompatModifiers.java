@@ -1,41 +1,8 @@
 package com.bettercompat.main.modifiers;
 
 import com.bettercompat.main.BetterCompat;
-import com.bettercompat.main.modifiers.craftable.LungeModifier;
-import com.bettercompat.main.modifiers.craftable.SentientModifier;
-import com.bettercompat.main.modifiers.craftable.SpiritReaperModifier;
-import com.bettercompat.main.modifiers.trait.AntiArmorModifier;
-import com.bettercompat.main.modifiers.trait.BarterableModifier;
-import com.bettercompat.main.modifiers.trait.BloodLeechingModifier;
-import com.bettercompat.main.modifiers.trait.BloodiedModifier;
-import com.bettercompat.main.modifiers.trait.BoneShardModifier;
-import com.bettercompat.main.modifiers.trait.ClimeModifier;
-import com.bettercompat.main.modifiers.trait.CrystalPowerModifier;
-import com.bettercompat.main.modifiers.trait.CrystallizedModifier;
-import com.bettercompat.main.modifiers.trait.DarkMightModifier;
-import com.bettercompat.main.modifiers.trait.DefileModifier;
-import com.bettercompat.main.modifiers.trait.ElectricModifier;
-import com.bettercompat.main.modifiers.trait.ElementalModifier;
-import com.bettercompat.main.modifiers.trait.EnderCrushingModifier;
-import com.bettercompat.main.modifiers.trait.EnderferenceModifier;
-import com.bettercompat.main.modifiers.trait.FieryModifier;
-import com.bettercompat.main.modifiers.trait.FlorasBlessingModifier;
-import com.bettercompat.main.modifiers.trait.HolyModifier;
-import com.bettercompat.main.modifiers.trait.IcyModifier;
-import com.bettercompat.main.modifiers.trait.InclinedModifier;
-import com.bettercompat.main.modifiers.trait.InfusedModifier;
-import com.bettercompat.main.modifiers.trait.LavaEfficiencyModifier;
-import com.bettercompat.main.modifiers.trait.ManaModifier;
-import com.bettercompat.main.modifiers.trait.MinersLuckModifier;
-import com.bettercompat.main.modifiers.trait.MoonlightModifier;
-import com.bettercompat.main.modifiers.trait.ObsidianifiedModifier;
-import com.bettercompat.main.modifiers.trait.ProspectModifier;
-import com.bettercompat.main.modifiers.trait.QuartzInfusedModifier;
-import com.bettercompat.main.modifiers.trait.ReflectModifier;
-import com.bettercompat.main.modifiers.trait.RisingModifier;
-import com.bettercompat.main.modifiers.trait.ShadowRageModifier;
-import com.bettercompat.main.modifiers.trait.SuperheatedModifier;
-import com.bettercompat.main.modifiers.trait.VoodooModifier;
+import com.bettercompat.main.modifiers.craftable.*;
+import com.bettercompat.main.modifiers.trait.*;
 
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -62,7 +29,7 @@ public class CompatModifiers {
 	public static final RegistryObject<ManaModifier> MANA = MODIFIERS.register("mana", ManaModifier::new); //manasteel, terrasteel, elementium, and alfsteel
 	public static final RegistryObject<ClimeModifier> CLIME = MODIFIERS.register("clime", ClimeModifier::new); //amber
 	public static final RegistryObject<ObsidianifiedModifier> OBSIDIANIFIED = MODIFIERS.register("obsidianified", ObsidianifiedModifier::new); //crystallized obsidian
-	public static final RegistryObject<CrystallizedModifier> CRYSTALLIED = MODIFIERS.register("crystallized", CrystallizedModifier::new); //diamond
+	public static final RegistryObject<CrystallizedModifier> CRYSTALLIZED = MODIFIERS.register("crystallized", CrystallizedModifier::new); //diamond
 	public static final RegistryObject<BarterableModifier> BARTERABLE = MODIFIERS.register("barterable", BarterableModifier::new); //emerald
 	public static final RegistryObject<SuperheatedModifier> SUPERHEATED = MODIFIERS.register("superheated", SuperheatedModifier::new); //vulcanite
 	public static final RegistryObject<RisingModifier> RISING = MODIFIERS.register("rising", RisingModifier::new); //enderium
@@ -77,10 +44,10 @@ public class CompatModifiers {
 	public static final RegistryObject<BloodLeechingModifier> BLOOD_LEECHING = MODIFIERS.register("blood_leeching", BloodLeechingModifier::new); //unused
 	public static final RegistryObject<InfusedModifier> INFUSED = MODIFIERS.register("infused", InfusedModifier::new); //unused
 	public static final RegistryObject<DefileModifier> DEFILE = MODIFIERS.register("defile", DefileModifier::new); //unused
+	public static final RegistryObject<AngelicModifier> ANGELIC = MODIFIERS.register("angelic", AngelicModifier::new); //aurinium
 	
 		//craftable
-	public static final RegistryObject<SentientModifier> SENTIENT = MODIFIERS.register("sentient", SentientModifier::new); 
-	public static final RegistryObject<SpiritReaperModifier> SPIRIT_REAPER = MODIFIERS.register("spirit_reaper", SpiritReaperModifier::new); 
-	public static final RegistryObject<LungeModifier> LUNGE = MODIFIERS.register("lunge", LungeModifier::new);
-
+	public static final RegistryObject<SentientModifier> SENTIENT = MODIFIERS.register("sentient", SentientModifier::new); //blood magic
+	public static final RegistryObject<SpiritReaperModifier> SPIRIT_REAPER = MODIFIERS.register("spirit_reaper", SpiritReaperModifier::new); //malum
+	public static final RegistryObject<LungeModifier> LUNGE = MODIFIERS.register("lunge", LungeModifier::new); 
 }

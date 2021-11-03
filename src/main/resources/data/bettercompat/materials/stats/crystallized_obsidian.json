@@ -4,7 +4,7 @@
       "durability": 5800,
       "miningSpeed": 10.0,
       "harvestLevel": 4,
-      "attack": 10.0
+      "attack": 9.0
     },
     "tconstruct:handle": {
       "durability": 1.5,

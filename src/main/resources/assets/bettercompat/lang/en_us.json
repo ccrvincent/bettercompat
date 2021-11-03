@@ -1,6 +1,8 @@
 {
       /*    Fluids    */
 
+  "fluid.bettercompat.molten_aurinium": "Molten Aurinium",
+
       //betterend
   "fluid.bettercompat.molten_aeternium": "Molten Aeternium",
   "fluid.bettercompat.molten_terminite": "Molten Terminite",
@@ -40,6 +42,13 @@
 
       /*     Items    */
 
+  "item.bettercompat.aurinium_ingot": "Aurinium Ingot",
+  "item.bettercompat.aurinium_nugget": "Aurinium Nugget",
+
+  "block.bettercompat.aurinium_block": "Block of Aurinium",
+
+  "item.bettercompat.aurinium_bucket": "Molten Aurinium Bucket",
+
       //betterend
   "item.bettercompat.aeternium_bucket": "Molten Aeternium Bucket",
   "item.bettercompat.terminite_bucket": "Molten Terminite Bucket",
@@ -78,6 +87,8 @@
   "item.bettercompat.ruby_bucket": "Molten Ruby Bucket",
 
       /*     Materials    */
+
+  "material.bettercompat.aurinium": "Aurinium",
 
       //minecraft
   "material.bettercompat.blaze_rod": "Blaze",
@@ -241,5 +252,8 @@
   "modifier.bettercompat.reflect.description": "When missing an attack, has a chance to reflect the damage you would have dealt onto yourself",
   "modifier.bettercompat.prospect": "Prospect",
   "modifier.bettercompat.prospect.flavor": "Miney!",
-  "modifier.bettercompat.prospect.description": "When mining, player will randomly receive haste effect for a short time"
+  "modifier.bettercompat.prospect.description": "When mining, player will randomly receive haste effect for a short time",
+  "modifier.bettercompat.angelic": "Angelic",
+  "modifier.bettercompat.angelic.flavor": "Heavenly!",
+  "modifier.bettercompat.angelic.description": ""
 }

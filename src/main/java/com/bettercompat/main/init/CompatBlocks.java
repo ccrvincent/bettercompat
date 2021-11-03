@@ -2,15 +2,26 @@ package com.bettercompat.main.init;
 
 import com.bettercompat.main.BetterCompat;
 
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class CompatBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BetterCompat.MODID);
+    
+    public static final RegistryObject<Block> AURINIUM_BLOCK = BLOCKS.register("aurinium_block", 
+    		() -> new Block(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.PINK).harvestLevel(4).harvestTool(ToolType.PICKAXE)
+    				.hardnessAndResistance(6.0f).sound(SoundType.STONE).setRequiresTool()));
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_AURINIUM = BLOCKS
+            .register("molten_aurinium_block", () -> new FlowingFluidBlock(CompatFluids.AURINIUM,
+                    Block.Properties.create(Material.LAVA).setLightLevel((state) -> {	return 15;	}).tickRandomly().hardnessAndResistance(100.0F).noDrops()));
     
     //better end
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_THALLASIUM = BLOCKS

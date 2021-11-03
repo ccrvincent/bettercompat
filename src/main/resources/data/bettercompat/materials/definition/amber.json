@@ -6,8 +6,11 @@
         "type": "tconstruct:config"
       },
       {
-        "modid": "druidcraft",
-        "type": "forge:mod_loaded"
+        "value": {
+          "tag": "forge:gems/amber",
+          "type": "forge:tag_empty"
+        },
+        "type": "forge:not"
       },
       {
         "modid": "cyclic",

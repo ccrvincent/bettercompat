@@ -1,31 +1,21 @@
 {
-  "condition": {
-    "values": [
-      {
-        "prop": "force_integration_materials",
-        "type": "tconstruct:config"
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/amethyst",
+        "type": "forge:tag_empty"
       },
-      {
-        "modid": "oresabovediamonds",
-        "type": "forge:mod_loaded"
-      }
-    ],
-    "type": "forge:or"
-  },
+      "type": "forge:not"
+    }
+  ],
   "type": "tconstruct:melting",
   "ingredient": {
-    "item": "oresabovediamonds:amethyst_block"
+    "tag": "forge:storage_blocks/amethyst"
   },
   "result": {
     "fluid": "bettercompat:molten_amethyst",
     "amount": 1296
   },
   "temperature": 1000,
-  "time": 200,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "time": 200
 }

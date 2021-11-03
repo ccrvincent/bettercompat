@@ -1,17 +1,13 @@
 {
-  "condition": {
-    "values": [
-      {
-        "prop": "force_integration_materials",
-        "type": "tconstruct:config"
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:ores/sapphire",
+        "type": "forge:tag_empty"
       },
-      {
-        "modid": "iceandfire",
-        "type": "forge:mod_loaded"
-      }
-    ],
-    "type": "forge:or"
-  },
+      "type": "forge:not"
+    }
+  ],
   "type": "tconstruct:ore_melting",
   "ingredient": {
   	"tag": "forge:ores/sapphire",
@@ -21,11 +17,5 @@
     "amount": 144
   },
   "temperature": 1000,
-  "time": 100,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "time": 100
 }

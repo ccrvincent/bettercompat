@@ -6,26 +6,20 @@
         "type": "tconstruct:config"
       },
       {
-        "modid": "iceandfire",
+        "modid": "oresabovediamonds",
         "type": "forge:mod_loaded"
       }
     ],
     "type": "forge:or"
   },
-  "type": "tconstruct:ore_melting",
+  "type": "tconstruct:melting",
   "ingredient": {
-  	"tag": "forge:ores/amethyst",
+    "item": "oresabovediamonds:amethyst_block"
   },
   "result": {
     "fluid": "bettercompat:molten_amethyst",
-    "amount": 144
+    "amount": 1296
   },
   "temperature": 1000,
-  "time": 100,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "time": 200
 }

@@ -49,7 +49,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            args '--mod', 'natureminerals', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'bettercompat', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
                 bettercompat {
@@ -113,6 +113,7 @@ dependencies {
     implementation fg.deobf ("curse.maven:citadel-331936:${citadel_version}")
     implementation fg.deobf ("vazkii.patchouli:Patchouli:${patchouli_version}")
     implementation fg.deobf ("top.theillusivec4.curios:curios-forge:${minecraft_version}-${curios_version}")
+    implementation fg.deobf ("curse.maven:libx-412525:${libx_version}")
 }
 
 jar {

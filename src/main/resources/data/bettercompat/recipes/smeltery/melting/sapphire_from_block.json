@@ -1,17 +1,13 @@
 {
-  "condition": {
-    "values": [
-      {
-        "prop": "force_integration_materials",
-        "type": "tconstruct:config"
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/sapphire",
+        "type": "forge:tag_empty"
       },
-      {
-        "modid": "iceandfire",
-        "type": "forge:mod_loaded"
-      }
-    ],
-    "type": "forge:or"
-  },
+      "type": "forge:not"
+    }
+  ],
   "type": "tconstruct:melting",
   "ingredient": {
     "tag": "forge:storage_blocks/sapphire"
@@ -21,11 +17,5 @@
     "amount": 1296
   },
   "temperature": 1000,
-  "time": 200,
-  "conditions": [
-      {
-          "type": "forge:mod_loaded",
-          "modid": "tconstruct"
-      }
-  ]
+  "time": 200
 }

@@ -2,6 +2,7 @@ package com.bettercompat.main.init;
 
 import com.bettercompat.main.BetterCompat;
 
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -10,9 +11,17 @@ import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import slimeknights.tconstruct.shared.TinkerCommons;
 
 public class CompatItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BetterCompat.MODID);
+    
+    public static final RegistryObject<Item> AURINIUM_INGOT = ITEMS.register("aurinium_ingot", () -> new Item(new Item.Properties().group(TinkerCommons.TAB_GENERAL)));
+    public static final RegistryObject<Item> AURINIUM_NUGGET = ITEMS.register("aurinium_nugget", () -> new Item(new Item.Properties().group(TinkerCommons.TAB_GENERAL)));
+    public static final RegistryObject<Item> AURINIUM_BLOCK = ITEMS.register("aurinium_block", 
+    		() -> new BlockItem(CompatBlocks.AURINIUM_BLOCK.get(), new Item.Properties().group(TinkerCommons.TAB_GENERAL)));
+	public static final RegistryObject<Item> AURINIUM_BUCKET = ITEMS.register("aurinium_bucket", 
+			() -> new BucketItem(CompatFluids.AURINIUM, new BucketItem.Properties().containerItem(Items.BUCKET).maxStackSize(1)));
     
     //better end
 	public static final RegistryObject<Item> THALLASIUM_BUCKET = ITEMS.register("thallasium_bucket", 

@@ -19,7 +19,7 @@ public class MoonlightModifier extends Modifier {
 	@Override
 	public void onBreakSpeed(IModifierToolStack tool, int level, BreakSpeed event, Direction sideHit, boolean isEffective, float miningSpeedModifier) {
 		LivingEntity holder = event.getPlayer();
-		if(holder.canEquip(tool.getItem()) && holder.getEntityWorld().isNightTime() && isEffective) {
+		if (holder.canEquip(tool.getItem()) && holder.getEntityWorld().isNightTime() && isEffective) {
 			event.setNewSpeed(event.getNewSpeed() * (level * 0.5f));
 		}
 	}
