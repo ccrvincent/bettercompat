@@ -10,7 +10,7 @@
   ],
   "type": "tconstruct:ore_melting",
   "ingredient": {
-  	"tag": "forge:ores/amethyst",
+  	"tag": "forge:ores/amethyst"
   },
   "result": {
     "fluid": "bettercompat:molten_amethyst",

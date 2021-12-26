@@ -14,7 +14,7 @@
   },
   "type": "tconstruct:ore_melting",
   "ingredient": {
-  	"item": "betternether:cincinnasite_ore",
+  	"item": "betternether:cincinnasite_ore"
   },
   "result": {
     "fluid": "bettercompat:molten_cincinnasite",

@@ -14,7 +14,7 @@
   },
   "type": "tconstruct:ore_melting",
   "ingredient": {
-  	"item": "oresabovediamonds:amethyst_ore",
+  	"item": "oresabovediamonds:amethyst_ore"
   },
   "result": {
     "fluid": "bettercompat:molten_amethyst",

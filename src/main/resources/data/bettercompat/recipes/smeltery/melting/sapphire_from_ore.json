@@ -10,7 +10,7 @@
   ],
   "type": "tconstruct:ore_melting",
   "ingredient": {
-  	"tag": "forge:ores/sapphire",
+  	"tag": "forge:ores/sapphire"
   },
   "result": {
     "fluid": "bettercompat:molten_sapphire",

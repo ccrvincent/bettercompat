@@ -10,7 +10,7 @@
   ],
   "type": "tconstruct:ore_melting",
   "ingredient": {
-  	"tag": "forge:ores/ruby",
+  	"tag": "forge:ores/ruby"
   },
   "result": {
     "fluid": "bettercompat:molten_ruby",

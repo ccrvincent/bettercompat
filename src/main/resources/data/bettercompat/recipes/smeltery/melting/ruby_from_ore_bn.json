@@ -14,7 +14,7 @@
   },
   "type": "tconstruct:ore_melting",
   "ingredient": {
-  	"item": "betternether:nether_ruby_ore",
+  	"item": "betternether:nether_ruby_ore"
   },
   "result": {
     "fluid": "bettercompat:molten_ruby",
